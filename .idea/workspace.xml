@@ -2,171 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="908a8bff-7fdb-4318-8aa4-f5811683d7b6" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\verstka.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\23fd9bf74ee53343060011fb0134b2037eb45d3c\_compass.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\24c4763b8c8b2d4b067ad65399004513c390a462\_css3.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\24c4763b8c8b2d4b067ad65399004513c390a462\_support.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\24c4763b8c8b2d4b067ad65399004513c390a462\_typography.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\24c4763b8c8b2d4b067ad65399004513c390a462\_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_animation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_appearance.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_background-clip.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_background-origin.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_background-size.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_border-radius.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_box-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_box-sizing.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_deprecated-support.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_filter.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_flexbox.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_font-face.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_hyphenation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_images.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_inline-block.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_opacity.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_regions.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_text-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_transform.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_transition.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\2be4942d4ce17b9b2d65fb577df6dda15198c181\_user-interface.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\38482b5ecb9f1dfe084c15d5bab3059adcedcc42\_bullets.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\38482b5ecb9f1dfe084c15d5bab3059adcedcc42\_horizontal-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\38482b5ecb9f1dfe084c15d5bab3059adcedcc42\_inline-block-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\38482b5ecb9f1dfe084c15d5bab3059adcedcc42\_inline-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_clearfix.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_float.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_hacks.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_min.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_reset.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\389de6f13e8a733da4c21006ae97cfb3d85ff357\_tag-cloud.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\4282be438cb2e1843e95468770b31feb79180a71\_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\42f9661c4dfd85b3ab85be5f7eec5d16bcef79ef\_css3.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\42f9661c4dfd85b3ab85be5f7eec5d16bcef79ef\_support.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\42f9661c4dfd85b3ab85be5f7eec5d16bcef79ef\_typography.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\42f9661c4dfd85b3ab85be5f7eec5d16bcef79ef\_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\44ec9362006bb711459f03d4e07f17003b3c9c03\_color.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\44ec9362006bb711459f03d4e07f17003b3c9c03\_general.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\44ec9362006bb711459f03d4e07f17003b3c9c03\_sprites.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\44ec9362006bb711459f03d4e07f17003b3c9c03\_tables.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\5a1b8e5f655d1997f1b7216d6af5929f7ff29baa\_links.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\5a1b8e5f655d1997f1b7216d6af5929f7ff29baa\_lists.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\5a1b8e5f655d1997f1b7216d6af5929f7ff29baa\_text.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\5a1b8e5f655d1997f1b7216d6af5929f7ff29baa\_units.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\5a1b8e5f655d1997f1b7216d6af5929f7ff29baa\_vertical_rhythm.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\6b7f958fe8e101b21e8b22a4ed2c08cfa5c97439\_alternating-rows-and-columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\6b7f958fe8e101b21e8b22a4ed2c08cfa5c97439\_borders.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\6b7f958fe8e101b21e8b22a4ed2c08cfa5c97439\_scaffolding.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_basket.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_print.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_product.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\_vars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\basket.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\product.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\75966d69db1a4a6c9b83ee3d832861a586666888\style.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_clearfix.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_float.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_hacks.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_min.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_reset.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\86b462a888dcdd7c7a14768ce1ee94de55f583b8\_tag-cloud.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\89fb550e11998cb3fd89f5147664d94148f2b91d\_bullets.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\89fb550e11998cb3fd89f5147664d94148f2b91d\_horizontal-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\89fb550e11998cb3fd89f5147664d94148f2b91d\_inline-block-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\89fb550e11998cb3fd89f5147664d94148f2b91d\_inline-list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\8ffd73f19b955f534c19b232a93d113658d7f7dd\_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\9f263978222834acb75f47b7d24363d411f0c739\_ellipsis.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\9f263978222834acb75f47b7d24363d411f0c739\_force-wrap.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\9f263978222834acb75f47b7d24363d411f0c739\_nowrap.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\9f263978222834acb75f47b7d24363d411f0c739\_replacement.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\a58e922db8f4fbd332fc8cb51a303659ce169cdc\_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\a58e922db8f4fbd332fc8cb51a303659ce169cdc\_sprite-img.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ac0b1ad4551f6b9ff0dd2ed3112b88e878faef36\_hover-link.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ac0b1ad4551f6b9ff0dd2ed3112b88e878faef36\_link-colors.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ac0b1ad4551f6b9ff0dd2ed3112b88e878faef36\_unstyled-link.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\acc47a017eefa94e606e1164acb74fef2e758667\_compass.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_animation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_appearance.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_background-clip.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_background-origin.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_background-size.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_border-radius.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_box-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_box-sizing.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_deprecated-support.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_filter.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_flexbox.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_font-face.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_hyphenation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_images.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_inline-block.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_opacity.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_regions.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_text-shadow.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_transform.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_transition.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\afa3769743dc6260ddd8716abb7765c021ebb602\_user-interface.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\b14357936501bb18232731b1b77d2abb13bd5f88\_brightness.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\b14357936501bb18232731b1b77d2abb13bd5f88\_contrast.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\b1cd8846a9d7e3ee9a645bb52bf734a1b2680b93\_grid-background.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\b57e70ccf3459216ee88d3289046bade97834fe4\_brightness.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\b57e70ccf3459216ee88d3289046bade97834fe4\_contrast.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\bc5657ec5d8360e2823d45a6bc825b24bc805607\_ellipsis.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\bc5657ec5d8360e2823d45a6bc825b24bc805607\_force-wrap.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\bc5657ec5d8360e2823d45a6bc825b24bc805607\_nowrap.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\bc5657ec5d8360e2823d45a6bc825b24bc805607\_replacement.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\c3390844358c1df1aef87664300baa0b5407c4bf\_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\c3390844358c1df1aef87664300baa0b5407c4bf\_sprite-img.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\c82ab391bb5d3d96e60d803040ab57e2be862cf9\_hover-link.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\c82ab391bb5d3d96e60d803040ab57e2be862cf9\_link-colors.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\c82ab391bb5d3d96e60d803040ab57e2be862cf9\_unstyled-link.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\da6b9c89c971dadd1e39c238a69a000d7fef4f3b\_grid-background.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\db56480e77e4a260db4de5d9985a8c518e943744\_color.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\db56480e77e4a260db4de5d9985a8c518e943744\_general.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\db56480e77e4a260db4de5d9985a8c518e943744\_sprites.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\db56480e77e4a260db4de5d9985a8c518e943744\_tables.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\_print.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\_product.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\_vars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\basket.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e3d5a3087ceaaab12e4752dcb7e4e260eb05f349\style.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e84d043f0dac4f4d253248c9537b6580a51705db\_alternating-rows-and-columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e84d043f0dac4f4d253248c9537b6580a51705db\_borders.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\e84d043f0dac4f4d253248c9537b6580a51705db\_scaffolding.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ea865486242adc15998d51e8f7e92de16587c818\_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ea865486242adc15998d51e8f7e92de16587c818\_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ea865486242adc15998d51e8f7e92de16587c818\_print.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ea865486242adc15998d51e8f7e92de16587c818\_vars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ea865486242adc15998d51e8f7e92de16587c818\style.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ef4dfd0968a0473e668be2964d948b9ec950a66b\_links.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ef4dfd0968a0473e668be2964d948b9ec950a66b\_lists.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ef4dfd0968a0473e668be2964d948b9ec950a66b\_text.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ef4dfd0968a0473e668be2964d948b9ec950a66b\_units.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\ef4dfd0968a0473e668be2964d948b9ec950a66b\_vertical_rhythm.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\_base.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\_print.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\_vars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\f03d7ae61236ec420eb7a21f78c88c6dbfe609c2\style.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\_layout.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\_mixins.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\_print.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\_product.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\_vars.scssc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\www\verstka\.sass-cache\fe15732eb6b7ae74cec0e44559665938d44d6eaa\style.scssc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/verstka.iml" afterPath="$PROJECT_DIR$/.idea/verstka.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="verstka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,8 +82,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09072165">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.13636364">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -283,7 +120,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="761" />
+    <option name="x" value="292" />
     <option name="width" value="1579" />
     <option name="height" value="1047" />
   </component>
@@ -412,25 +249,31 @@
       <option name="project" value="LOCAL" />
       <updated>1442315642299</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="config gitignore">
+      <created>1442329401084</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1442329401084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="1579" height="1047" extended-state="0" />
+    <frame x="292" y="0" width="1579" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24687295" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43995634" sideWeight="0.23699802" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44043717" sideWeight="0.24094799" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.49573562" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896176" sideWeight="0.49308756" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43995634" sideWeight="0.763002" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44043717" sideWeight="0.759052" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -846,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09072165">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.13636364">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
