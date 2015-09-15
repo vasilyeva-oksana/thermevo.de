@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// "vars" partial
+// --------------------
+//
+////////////////////////////////////////////////////////////////////////////////
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,500italic,700,700italic);
+//
+// Variables
+////////////////////////////////////////
+
+
+//
+// Breakpoints
+//
+$breakpoints1280: 1280px;
+$breakpoints960: 960px;
+$breakpoints640: 640px;
+$breakpoints320: 320px;
+
+//
+// Backgrounds
+//
+
+//
+// Fonts
+//
+$main_font: "Ubuntu", helvetica, Arial, sans-serif;
+
+//
+// Colors
+//
+$red_text_color: #e62e4c;
+$link_color_type1: #2297e6;
+$link_color_type1_hover: #6dbaef;
+$link_color_type2: #015995;
+$link_color_type2_hover: #e62e4c;
+$link_color_type3: #e62e4c;
+$link_color_type3_hover: #ff667f;
+
+
+$width_filtr: 310px;
+
+//
+// Partials to be shared with all .scss files.
+////////////////////////////////////////
+@import "compass";                  // See http://compass-style.org
+@import "compass/reset/utilities";
+@import "compass/css3";
+@import "mixins";                   // Import our custom mixins last.
