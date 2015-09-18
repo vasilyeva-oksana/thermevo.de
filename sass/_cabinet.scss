@@ -1,0 +1,478 @@
+#cabinet-menu {
+  background-color: #015995;
+  height: 60px;
+  width: 100%;
+  .section {
+    @media screen and (max-width: 639px) {
+      padding: 0 10px;
+    }
+  }
+  ul {
+    padding: 0;
+    li {
+      display: inline-block;
+      float: left;
+      height: 60px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &.menu-messages {
+        a {
+          position: relative;
+          @include background-image(image-url("menu_messages.png"));
+          background-repeat: no-repeat;
+          background-position: left 20px center;
+          padding-right: 60px;
+          @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+            padding: 0 40px 0 40px;
+            background-position: left 10px center;
+          }
+        }
+        .count {
+          background-color: $red_text_color;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          border-radius: 12px;
+          color: #fff;
+          display: block;
+          font-size: 13px;
+          height: 24px;
+          line-height: 24px;
+          margin-right: 25px;
+          padding: 0 4px;
+          position: absolute;
+          right: 0;
+          top: 8px;
+          @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+            margin-right: 10px;
+          }
+          @media screen and (max-width: 639px) {
+            margin-right: 5px;
+            text-indent: 0;
+          }
+        }
+      }
+      &.menu-profile a {
+        @include background-image(image-url("menu_profile.png"));
+        background-repeat: no-repeat;
+        background-position: left 20px center;
+      }
+      &.menu-iqub a {
+        @include background-image(image-url("menu_iqub.png"));
+        background-repeat: no-repeat;
+        background-position: left 20px center;
+      }
+      &.menu-blog a {
+        @include background-image(image-url("menu_blog.png"));
+        background-repeat: no-repeat;
+        background-position: left 20px center;
+      }
+      &.menu-calculations a {
+        @include background-image(image-url("menu_calculations.png"));
+        background-repeat: no-repeat;
+        background-position: left 20px center;
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          padding-right: 5px;
+        }
+      }
+      a {
+        color: #fff;
+        display: block;
+        font-size: 17px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 30px 0 60px;
+        text-decoration: none;
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          background-position: left 10px center !important;
+          font-size: 15px;
+          padding: 0 15px 0 40px;
+        }
+        @media screen and (max-width: 639px) {
+          font-size: 0;
+          padding: 0;
+          width: 60px;
+          text-indent: -9999px;
+        }
+        &:hover {
+          background-color: #014d80;
+        }
+      }
+    }
+  }
+}
+#cabinet-container {
+  &.messages {
+    padding-top: 30px;
+  }
+  &.profile {
+    padding-top: 80px;
+    @media screen and (max-width: 959px) {
+      padding-top: 40px;
+    }
+  }
+  .section {
+    @include clearfix();
+  }
+  h1.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding: 50px 0;
+    @media screen and (max-width: 959px) {
+      font-size: 30px;
+      padding: 20px 0;
+    }
+  }
+  .filter-container {
+    margin-bottom: 58px;
+    label {
+      color: #5d6978;
+      display: block;
+      font-weight: 13px;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    select {
+      background-color: #fff;
+      border: none;
+      border-bottom: 1px solid #161d26;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      color: #161d26;
+      font-size: 17px;
+      height: 40px;
+      @media screen and (max-width: 959px) {
+        width: 100%;
+      }
+    }
+  }
+  .messages-container {
+    @include clearfix();
+    width: 100%;
+    .message-row {
+      @include clearfix();
+      border-bottom: 1px solid #d3dae1;
+      width: 100%;
+      @media screen and (max-width: 639px) {
+        @include box-sizing(border-box);
+        padding: 20px;
+      }
+      .info-nocheck {
+        display: none;
+      }
+      @media screen and (max-width: 639px) {
+        .info-check {
+          line-height: 27px;
+        }
+        .info-nocheck {
+          line-height: 27px;
+        }
+      }
+      &.not-read {
+        background-color: #c8e5f9;
+        border-bottom: 1px solid #fff;
+        .info-check {
+          display: none;
+        }
+        .info-nocheck {
+          display: block;
+        }
+      }
+      .read-info {
+        color: #5d6978;
+        display: inline-block;
+        float: left;
+        font-size: 13px;
+        padding: 20px 0;
+        text-align: center;
+        width: 80px;
+        @media screen and (max-width: 639px) {
+          padding: 0;
+          text-align: left;
+          width: 100%;
+        }
+        @media screen and (max-width: 959px) {
+          font-size: 11px;
+        }
+        label {
+          margin-bottom: 10px;
+          @media screen and (max-width: 639px) {
+            float: left;
+            margin-right: 10px;
+          }
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+      .message-info {
+        @include box-sizing(border-box);
+        display: inline-block;
+        float: left;
+        padding-right: 20px;
+        width: 1160px;
+        @media screen and (max-width: 639px) {
+          width: 100%;
+        }
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          width: 520px;
+        }
+        @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+          width: 840px;
+        }
+        .t {
+          padding: 22px 0 3px 0;
+          @media screen and (max-width: 639px) {
+            padding-top: 0;
+          }
+        }
+        .b {
+          color: #161d26;
+          font-size: 17px;
+          padding: 5px 0 18px 0;
+          @media screen and (max-width: 959px) {
+            font-size: 15px;
+          }
+          @media screen and (max-width: 639px) {
+            padding-bottom: 0;
+          }
+        }
+        a {
+          color: $red_text_color;
+        }
+        .date {
+          color: #5d6978;
+          font-size: 13px;
+          text-transform: uppercase;
+          @media screen and (max-width: 959px) {
+            font-size: 11px;
+          }
+        }
+        .cat {
+          color: #015995;
+          font-size: 13px;
+          margin-left: 10px;
+          @media screen and (max-width: 959px) {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+  .filtr {
+    display: inline-block;
+    width: $width_filtr;
+    float: left;
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+    .menu {
+      width: $width_filtr - 60px;
+      @media screen and (max-width: 959px) {
+        width: 100%;
+      }
+      .btn-filtr {
+        border: 1px solid #d3dae1;
+        margin-bottom: 20px;
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          display: inline-block;
+          float: left;
+          width: 187px;
+          &:first-child {
+            margin-right: 20px;
+          }
+          &:last-child {
+            margin-left: 20px;
+          }
+        }
+        &.active,&:hover,&.active:hover{
+          @include background(image-url("bg-menu-filtr.png"));
+          width: $width_filtr - 28px;
+          border: 1px solid #fff;
+          @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+            width: 185px;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+        &:hover{
+          @include background(#015995);
+          width: $width_filtr - 60px;
+          border: 1px solid #015995;
+          @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+            width: 187px;
+          }
+        }
+        a{
+          font-family: $main_font;
+          font-size: 17px;
+          color: #161d26;
+          line-height: 58px;
+          vertical-align: middle;
+          padding-left: 19px;
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          @media screen and (max-width: 959px) {
+            font-size: 15px;
+            padding-left: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .profile-content {
+    float: left;
+    display: inline-block;
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+    @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+      width: 610px;
+    }
+    @media screen and (min-width: $breakpoints1280) {
+      width: 930px;
+    }
+  }
+}
+#after-cabinet-container {
+  border-top: 1px solid #d3dae1;
+  padding: 20px 0;
+  width: 100%;
+  .icon-left {
+    @include background-image(image-url("energy_icon.png"));
+    background-color: #ffe93b;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    width: 40px;
+  }
+  .text-nomobile {
+    color: #b9c1cb;
+    display: table-cell;
+    height: 40px;
+    font-size: 13px;
+    vertical-align: middle;
+    width: 1100px;
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
+    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+      width: 480px;
+    }
+    @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+      width: 800px;
+    }
+  }
+  .text-mobile {
+    display: none;
+    @media screen and (max-width: 639px) {
+      color: #b9c1cb;
+      display: table-cell;
+      height: 40px;
+      font-size: 13px;
+      vertical-align: middle;
+      width: 180px;
+    }
+  }
+  .icon-right {
+    @include background-image(image-url("arrow_up.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+    @include box-sizing(border-box);
+    border: 1px solid #d3dae1;
+    display: inline-block;
+    float: right;
+    height: 40px;
+    width: 40px;
+  }
+}
+.pagination {
+  margin: 50px 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      @include box-sizing(border-box);
+      color: #161d26;
+      display: inline-block;
+      height: 40px;
+      text-align: center;
+      vertical-align: top;
+      width: 40px;
+      @media screen and (max-width: 959px) {
+        &:not(.prev):not(.next):not(.current) {
+          display: none;
+        }
+      }
+      a {
+        @include box-sizing(border-box);
+        color: #161d26;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+        text-decoration: none;
+        width: 40px;
+        &:hover {
+          background-color: #d3dae1;
+        }
+      }
+      &.current {
+        background-color: #015995;
+        color: #fff;
+        cursor: pointer;
+        line-height: 40px;
+      }
+      &.prev {
+        @include background-image(image-url("prev_next.png"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-color: #fff;
+        color: #fff;
+        line-height: 40px;
+        &:not(.disable):hover {
+          background-color: #d3dae1;
+        }
+        &.disable {
+          background-position: 0 -40px;
+        }
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      &.next {
+        @include background-image(image-url("prev_next.png"));
+        background-repeat: no-repeat;
+        background-position: 0 -80px;
+        background-color: #fff;
+        color: #fff;
+        line-height: 40px;
+        &:not(.disable):hover {
+          background-color: #d3dae1;
+        }
+        &.disable {
+          background-position: 0 -120px;
+        }
+        a {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
