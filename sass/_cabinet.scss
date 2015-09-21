@@ -27,6 +27,11 @@
             padding: 0 40px 0 40px;
             background-position: left 10px center;
           }
+          &:hover {
+            .count {
+
+            }
+          }
         }
         .count {
           background-color: $red_text_color;
@@ -44,10 +49,15 @@
           right: 0;
           top: 8px;
           @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+            font-size: 11px;
             margin-right: 10px;
           }
           @media screen and (max-width: 639px) {
-            margin-right: 5px;
+            @include transform(translate(50%, 0));
+            font-size: 11px;
+            margin: 0;
+            right: 50%;
+            top: 32px;
             text-indent: 0;
           }
         }
@@ -94,8 +104,9 @@
           width: 60px;
           text-indent: -9999px;
         }
+        &.active,
         &:hover {
-          background-color: #014d80;
+          background-color: $red_text_color;
         }
       }
     }
@@ -265,10 +276,10 @@
     display: inline-block;
     width: $width_filtr;
     float: left;
-    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
-      bottom: 70px;
-      position: relative;
-    }
+    //@media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+    //  bottom: 70px;
+    //  position: relative;
+    //}
     @media screen and (max-width: 959px) {
       width: 100%;
     }
@@ -339,21 +350,21 @@
     }
   }
   .profile-title {
-    float: right;
-    display: inline-block;
-    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
-      bottom: -70px;
-      position: relative;
-    }
-    @media screen and (max-width: 959px) {
-      width: 100%;
-    }
-    @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
-      width: 610px;
-    }
-    @media screen and (min-width: $breakpoints1280) {
-      width: 930px;
-    }
+    //float: right;
+    //display: inline-block;
+    //@media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+    //  bottom: -70px;
+    //  position: relative;
+    //}
+    //@media screen and (max-width: 959px) {
+    //  width: 100%;
+    //}
+    //@media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+    //  width: 610px;
+    //}
+    //@media screen and (min-width: $breakpoints1280) {
+    //  width: 930px;
+    //}
     h1 {
       color: #161d26;
       font-size: 50px;
