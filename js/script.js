@@ -136,6 +136,9 @@ $(document).ready(function(){
   $('.menu-btn-mobile').on('click', function() {
     $('.header-menus-container').slideToggle();
   });
+  $('.message-error .close').on('click', function() {
+    $(this).closest('.message-error').fadeOut();
+  });
 });
 (function($) {
   $(window).resize(function() {
