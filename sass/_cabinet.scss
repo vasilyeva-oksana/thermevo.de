@@ -265,6 +265,10 @@
     display: inline-block;
     width: $width_filtr;
     float: left;
+    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+      bottom: 70px;
+      position: relative;
+    }
     @media screen and (max-width: 959px) {
       width: 100%;
     }
@@ -294,6 +298,10 @@
           @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
             width: 185px;
           }
+          @media screen and (max-width: 639px) {
+            background: #015995;
+            width: 100%;
+          }
           a {
             text-decoration: none;
             color: #fff;
@@ -305,6 +313,10 @@
           border: 1px solid #015995;
           @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
             width: 187px;
+          }
+          @media screen and (max-width: 639px) {
+            background: #015995;
+            width: 100%;
           }
         }
         a{
@@ -326,7 +338,38 @@
       }
     }
   }
+  .profile-title {
+    float: right;
+    display: inline-block;
+    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+      bottom: -70px;
+      position: relative;
+    }
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+    @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+      width: 610px;
+    }
+    @media screen and (min-width: $breakpoints1280) {
+      width: 930px;
+    }
+    h1 {
+      color: #161d26;
+      font-size: 50px;
+      font-weight: bold;
+      margin: 0 0 40px 0;
+      @media screen and (max-width: 959px) {
+        font-size: 30px;
+        margin: 30px 0;
+      }
+      @media screen and (max-width: 639px) {
+        margin-top: 0;
+      }
+    }
+  }
   .profile-content {
+    color: #161d26;
     float: left;
     display: inline-block;
     @media screen and (max-width: 959px) {
@@ -337,6 +380,238 @@
     }
     @media screen and (min-width: $breakpoints1280) {
       width: 930px;
+    }
+    .text {
+      font-size: 17px;
+      @media screen and (max-width: 959px) {
+        font-size: 15px;
+      }
+    }
+    .faq {
+      margin: 10px 0;
+      a {
+        border-bottom: 1px dotted #015995;
+        color: #015995;
+        font-size: 17px;
+        text-decoration: none;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .message-error {
+    background-color: #f9cbd3;
+    color: #161d26;
+    font-size: 13px;
+    margin: 60px 0 25px 0;
+    padding: 20px;
+    position: relative;
+    @media screen and (max-width: 959px) {
+      font-size: 13px;
+    }
+    a {
+      color: $red_text_color;
+      text-decoration: underline;
+    }
+    .close {
+      @include background-image(image-url("message_error_close.png"));
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      height: 10px;
+      opacity: 1;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 10px;
+    }
+  }
+}
+#profile-edit-form {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  .form-right {
+    display: inline-block;
+    float: right;
+    width: 280px;
+    @media screen and (max-width: 639px) {
+      width: 100%;
+    }
+    .profile-picture {
+      margin-bottom: 20px;
+    }
+    .change-picture {
+      background-color: $red_text_color;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border: 0;
+      color: #fff;
+      display: block;
+      height: 60px;
+      font-size: 17px;
+      text-align: center;
+      width: 100%;
+      @media screen and (max-width: 959px) {
+        font-size: 15px;
+      }
+      &:hover {
+        background-color: #ff4060;
+      }
+    }
+    .description {
+      color: #5d6978;
+      font-size: 13px;
+      padding: 20px 0;
+      @media screen and (max-width: 959px) {
+        font-size: 11px;
+      }
+    }
+    .profile-social {
+      .social-connect {
+        @include clearfix();
+        a {
+          display: inline-block;
+          float: left;
+          height: 60px;
+          margin-right: 13px;
+          width: 60px;
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+          &.social1 {
+            @include background-image(image-url("social1.jpg"));
+            background-size: cover;
+          }
+          &.social2 {
+            @include background-image(image-url("social2.jpg"));
+            background-size: cover;
+          }
+          &.social3 {
+            @include background-image(image-url("social3.jpg"));
+            background-size: cover;
+          }
+          &.social4 {
+            @include background-image(image-url("social4.jpg"));
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+  .form-left {
+    display: inline-block;
+    float: left;
+    width: 440px;
+    @media screen and (max-width: 639px) {
+      width: 100%;
+    }
+    @media screen and (min-width: $breakpoints640) and (max-width: 1279px) {
+      width: 280px;
+    }
+    .cont {
+      margin-bottom: 20px;
+      .icon {
+        @include background-image(image-url("profile_form_icon.png"));
+        background-color: $red_text_color;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        float: left;
+        height: 60px;
+        margin-right: 20px;
+        width: 60px;
+      }
+      .t {
+        display: table-cell;
+        font-size: 17px;
+        height: 60px;
+        vertical-align: middle;
+        width: 190px;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+        a {
+          color: $red_text_color;
+          text-decoration: underline;
+        }
+      }
+    }
+    .form-item {
+      display: inline-block;
+      margin: 17px 0;
+      width: 100%;
+    }
+    label {
+      color: #5d6978;
+      font-size: 13px;
+      margin: 0;
+      @media screen and (max-width: 959px) {
+        font-size: 11px;
+      }
+    }
+    input[type=text],
+    input[type=email] {
+      @include box-sizing(border-box);
+      border: 1px solid #161d26;
+      color: #161d26;
+      font-size: 13px;
+      height: 40px;
+      padding: 0 15px;
+      width: 100%;
+      @media screen and (max-width: 959px) {
+        font-size: 11px;
+      }
+    }
+    .form-actions {
+      display: inline-block;
+      height: 60px;
+      margin: 12px 0 60px 0;
+      input[type=submit] {
+        background-color: $red_text_color;
+        border: none;
+        color: #fff;
+        display: inline-block;
+        float: left;
+        font-size: 24px;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 40px 0 30px;
+        @media screen and (max-width: 959px) {
+          font-size: 17px;
+        }
+      }
+      .submit-arrow {
+        display: inline-block;
+        height: 60px;
+        @include background(image-url("red_btn_after_60.png"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: relative;
+        width: 33px;
+        &:before {
+          @include background(image-url("red_btn_icon.png"));
+          background-repeat: no-repeat;
+          background-position: center;
+          content: '';
+          height: 60px;
+          position: absolute;
+          left: -8px;
+          width: 16px;
+          z-index: 3;
+          border-left-color: #fff;
+        }
+      }
+      &:hover {
+        input[type=submit] {
+          background-color: #ff4060;
+        }
+        .submit-arrow{
+          background-position: 0 -60px;
+        }
+      }
     }
   }
 }
