@@ -400,7 +400,7 @@
     }
     .faq {
       margin: 10px 0;
-      a {
+      .toggle-link {
         border-bottom: 1px dotted #015995;
         color: #015995;
         font-size: 17px;
@@ -409,13 +409,18 @@
           font-size: 15px;
         }
       }
+      .faq-container {
+        @include box-sizing(border-box);
+        display: none;
+        //padding: 60px 0 25px 0;
+        padding: 10px 0;
+      }
     }
   }
   .message-error {
     background-color: #f9cbd3;
     color: #161d26;
     font-size: 13px;
-    margin: 60px 0 25px 0;
     padding: 20px;
     position: relative;
     @media screen and (max-width: 959px) {
@@ -566,6 +571,7 @@
     input[type=text],
     input[type=email] {
       @include box-sizing(border-box);
+      @include border-radius(0);
       border: 1px solid #161d26;
       color: #161d26;
       font-size: 13px;
@@ -581,6 +587,7 @@
       height: 60px;
       margin: 12px 0 60px 0;
       input[type=submit] {
+        @include border-radius(0);
         background-color: $red_text_color;
         border: none;
         color: #fff;

@@ -139,6 +139,10 @@ $(document).ready(function(){
   $('.message-error .close').on('click', function() {
     $(this).closest('.message-error').fadeOut();
   });
+  $('.faq .toggle-link').on('click', function() {
+    $(this).parent().find('.faq-container').slideToggle();
+    return false;
+  });
 });
 (function($) {
   $(window).resize(function() {
