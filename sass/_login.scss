@@ -1,0 +1,324 @@
+#login-container {
+  color: #161d26;
+  padding-top: 60px;
+  @media screen and (max-width: 959px) {
+    padding-top: 30px;
+  }
+  h1.title {
+    font-size: 50px;
+    font-weight: bold;
+    @media screen and (max-width: 959px) {
+      font-size: 30px;
+    }
+  }
+  .under-title {
+    color: $red_text_color;
+    font-size: 13px;
+    text-decoration: underline;
+    @media screen and (max-width: 959px) {
+      font-size: 11px;
+    }
+  }
+  .login-content {
+    @include clearfix();
+    padding: 45px 0;
+    @media screen and (max-width: 959px) {
+      padding: 35px 0;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .login-left {
+    display: inline-block;
+    float: left;
+    width: 440px;
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+  }
+  .login-forgot {
+    margin-bottom: 20px;
+    a {
+      color: $red_text_color;
+      font-size: 13px;
+      text-decoration: underline;
+      @media screen and (max-width: 959px) {
+        font-size: 11px;
+      }
+    }
+  }
+  .login-right {
+    display: inline-block;
+    float: right;
+    width: 600px;
+    @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+      width: 440px;
+    }
+    @media screen and (max-width: 959px) {
+      width: 100%;
+    }
+    .r {
+      @include clearfix();
+      background-color: #e5eaee;
+      font-size: 17px;
+      line-height: 30px;
+      @media screen and (max-width: 959px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .icon {
+        display: inline-block;
+        float: left;
+        height: 160px;
+        width: 140px;
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          height: 130px;
+          width: 130px;
+        }
+        @media screen and (max-width: 639px) {
+          height: 130px;
+          width: 130px;
+        }
+      }
+      .text {
+        @include box-sizing(border-box);
+        display: inline-block;
+        float: left;
+        padding: 35px 35px 35px 0;
+        width: 460px;
+        @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+          width: 300px;
+        }
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          width: 470px;
+        }
+        @media screen and (max-width: 639px) {
+          padding: 0 20px 20px 20px;
+          width: 100%;
+        }
+      }
+      &.r1 {
+        margin-bottom: 20px;
+        .icon {
+          @include background-image(image-url("login_icon1.png"));
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      &.r2 {
+        margin-bottom: 60px;
+        @media screen and (max-width: 1279px) {
+          margin-bottom: 20px;
+        }
+        .icon {
+          @include background-image(image-url("login_icon2.png"));
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      &.r3 {
+        .icon {
+          @include background-image(image-url("login_icon3.png"));
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+#login-form {
+  @include clearfix();
+  width: 100%;
+  .left {
+    margin-bottom: 50px;
+    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+      display: inline-block;
+      float: left;
+      width: 280px;
+    }
+  }
+  .right {
+    width: 100%;
+    @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+      display: inline-block;
+      float: right;
+      width: 280px;
+    }
+    @media screen and (max-width: 959px) {
+      margin-bottom: 60px;
+    }
+  }
+  .login-register-link {
+    @include box-sizing(border-box);
+    border-left: 1px solid #d3dae1;
+    border-top: 1px solid #d3dae1;
+    border-bottom: 1px solid #d3dae1;
+    color: #161d26;
+    display: inline-block;
+    font-size: 17px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+    &.mobile {
+      display: none;
+    }
+    @media screen and (max-width: 959px) {
+      display: none;
+      &.mobile {
+        display: inline-block;
+      }
+    }
+    &:before {
+      content: '';
+      border-top: 30px solid transparent;
+      border-left: 30px solid #d3dae1;
+      border-bottom: 30px solid transparent;
+      height: 0;
+      position: absolute;
+      right: -30px;
+      top: -1px;
+      width: 0;
+    }
+    &:after {
+      content: '';
+      border-top: 30px solid transparent;
+      border-left: 30px solid #fff;
+      border-bottom: 30px solid transparent;
+      height: 0;
+      position: absolute;
+      right: -29px;
+      top: -1px;
+      width: 0;
+    }
+    &:hover {
+      background-color: #d3dae1;
+      &:after {
+        border-top: 30px solid transparent;
+        border-left: 30px solid #d3dae1;
+        border-bottom: 30px solid transparent;
+      }
+    }
+    @media screen and (max-width: 959px) {
+      font-size: 15px;
+    }
+  }
+  .login-singin {
+    a {
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: middle;
+      &.social1 {
+        @include background(image-url("login_social1.jpg"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+      }
+      &.social2 {
+        @include background(image-url("login_social2.jpg"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+      }
+      &.social3 {
+        @include background(image-url("login_social3.jpg"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+      }
+      &.social4 {
+        @include background(image-url("login_social4.jpg"));
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+  .form-item {
+    display: inline-block;
+    margin: 17px 0;
+    width: 100%;
+  }
+  label {
+    color: #5d6978;
+    font-size: 13px;
+    margin: 0;
+    @media screen and (max-width: 959px) {
+      font-size: 11px;
+    }
+  }
+  input[type=text],
+  input[type=email] {
+    @include box-sizing(border-box);
+    @include border-radius(0);
+    border: 1px solid #161d26;
+    color: #161d26;
+    font-size: 13px;
+    height: 40px;
+    padding: 0 15px;
+    width: 100%;
+    @media screen and (max-width: 959px) {
+      font-size: 11px;
+    }
+  }
+  .form-actions {
+    display: inline-block;
+    height: 60px;
+    margin: 12px 0 60px 0;
+    input[type=submit] {
+      @include border-radius(0);
+      background-color: $red_text_color;
+      border: none;
+      color: #fff;
+      display: inline-block;
+      float: left;
+      font-size: 24px;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 40px 0 30px;
+      @media screen and (max-width: 959px) {
+        font-size: 17px;
+      }
+    }
+    .submit-arrow {
+      display: inline-block;
+      height: 60px;
+      @include background(image-url("red_btn_after_60.png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: relative;
+      width: 33px;
+      &:before {
+        @include background(image-url("red_btn_icon.png"));
+        background-repeat: no-repeat;
+        background-position: center;
+        content: '';
+        height: 60px;
+        position: absolute;
+        left: -8px;
+        width: 16px;
+        z-index: 3;
+        border-left-color: #fff;
+      }
+    }
+    &:hover {
+      input[type=submit] {
+        background-color: #ff4060;
+      }
+      .submit-arrow{
+        background-position: 0 -60px;
+      }
+    }
+  }
+}
