@@ -1,4 +1,4 @@
-#login-container {
+#registration-container {
   color: #161d26;
   padding-top: 60px;
   @media screen and (max-width: 959px) {
@@ -19,7 +19,7 @@
       font-size: 11px;
     }
   }
-  .login-content {
+  .registration-content {
     @include clearfix();
     padding: 45px 0;
     @media screen and (max-width: 959px) {
@@ -29,18 +29,7 @@
       font-size: 24px;
     }
   }
-  .login-forgot {
-    margin-bottom: 20px;
-    a {
-      color: $red_text_color;
-      font-size: 13px;
-      text-decoration: underline;
-      @media screen and (max-width: 959px) {
-        font-size: 11px;
-      }
-    }
-  }
-  .login-left {
+  .registration-left {
     display: inline-block;
     float: left;
     width: 440px;
@@ -48,7 +37,7 @@
       width: 100%;
     }
   }
-  .login-right {
+  .registration-right {
     display: inline-block;
     float: right;
     width: 600px;
@@ -129,9 +118,20 @@
     }
   }
 }
-#login-form {
+#registration-form {
   @include clearfix();
   width: 100%;
+  .description {
+    margin: 10px 0;
+    a {
+      color: $red_text_color;
+      font-size: 13px;
+      text-decoration: underline;
+      @media screen and (max-width: 959px) {
+        font-size: 11px;
+      }
+    }
+  }
   .left {
     margin-bottom: 50px;
     @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
