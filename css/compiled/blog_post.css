@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,500italic,700,700italic);
+#iqub-container.blog .blog_tags a:hover {
+  color: #428bca;
+  text-decoration: underline;
+}
 #iqub-container.blog .blog_subscribe input {
   font-size: 17px;
 }

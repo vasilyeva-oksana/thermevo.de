@@ -1,5 +1,13 @@
 @import "vars";
 #iqub-container.blog{
+  .blog_tags{
+    a{
+      &:hover{
+        color: #428bca;
+        text-decoration: underline;
+      }
+    }
+  }
   .blog_subscribe input{
     font-size: 17px;
   }

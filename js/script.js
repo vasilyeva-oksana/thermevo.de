@@ -153,11 +153,13 @@ $(document).ready(function(){
     // TagCanvas failed to load
     $('#TagsContainer').hide();
   }
-
-  Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true
+  $(".swiper-container").each(function(){
+    Swiper($(this), {
+      pagination: $(this).find('.swiper-pagination'),
+      paginationClickable: true
+    });
   });
+
 
 });
 (function($) {
