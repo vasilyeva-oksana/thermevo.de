@@ -143,6 +143,22 @@ $(document).ready(function(){
     $(this).parent().find('.faq-container').slideToggle();
     return false;
   });
+
+  if( ! $('#TagsCanvas').tagcanvas({
+        textColour : '#044487',
+        outlineThickness : 1,
+        maxSpeed : 0.1,
+        depth : 0.5
+      })) {
+    // TagCanvas failed to load
+    $('#TagsContainer').hide();
+  }
+
+  Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true
+  });
+
 });
 (function($) {
   $(window).resize(function() {

@@ -1,0 +1,34 @@
+@import "vars";
+#iqub-container.blog{
+  .blog_subscribe input{
+    font-size: 17px;
+  }
+  &.blog-post{
+    .blog_article{
+      padding: 0;
+    }
+    .body-post{
+      color: $color_black;
+      line-height: 1;
+      font-size: 17px;
+    }
+    .block-post{
+      padding: 60px 0 0;
+    }
+    .data-post{
+      font-size: 13px;
+      color: $color_grey;
+    }
+    .swiper-container{
+      padding-bottom: 8px;
+
+      .desk-image{
+        color: $color_grey;
+        font-size: 13px;
+      }
+    }
+    .swiper-pagination{
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,500,500italic,700,700italic);
+#iqub-container.blog .blog_subscribe input {
+  font-size: 17px;
+}
+#iqub-container.blog.blog-post .blog_article {
+  padding: 0;
+}
+#iqub-container.blog.blog-post .body-post {
+  color: #161d26;
+  line-height: 1;
+  font-size: 17px;
+}
+#iqub-container.blog.blog-post .block-post {
+  padding: 60px 0 0;
+}
+#iqub-container.blog.blog-post .data-post {
+  font-size: 13px;
+  color: #5d6978;
+}
+#iqub-container.blog.blog-post .swiper-container {
+  padding-bottom: 8px;
+}
+#iqub-container.blog.blog-post .swiper-container .desk-image {
+  color: #5d6978;
+  font-size: 13px;
+}
+#iqub-container.blog.blog-post .swiper-pagination {
+  text-align: right;
+}
+
+/*# sourceMappingURL=blog_post.css.map */
