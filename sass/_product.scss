@@ -66,7 +66,71 @@
     color: #5d6978;
   }
 }
+.query_wrap{
+  .query{
+    color: #015995;
+    font-size: 17px;
+    cursor: pointer;
+    span{
+      border-bottom: 1px dashed #015995;
+      line-height: 35px;
+    }
+  }
+  .reply{
+    display: none;
+  }
+  &.active{
+    .reply{
+      display: inline-block;
+      position: relative;
+      border: 1px solid #d3dae1;
+      top: 18px;
+      padding: 20px;
+      margin-bottom: 18px;
+      font-size: 13px;
+      line-height: 17px;
+      color:#5d6978;
+      p{
+        padding: 14px 0;
+        margin: 0;
+      }
+      a{
+        text-decoration: underline;
+      }
 
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 10px;
+        width: 11px; height: 18px;
+        @include background(image-url("tooltip-pointer.png")) ;
+      }
+      .white-btn.hide-btn{
+        position: absolute;
+        font-size: 13px;
+        bottom: 20px;
+        right: 20px;
+        width: 88px;
+        height: 41px;
+        text-align: center;
+        line-height: 40px;
+        &:before{
+          content:"\2227";
+          position: relative;
+          display: inline-block;
+          top: -3px;
+          left: -8px;
+          font-weight: bold;
+          font-size: 8px;
+        }
+      }
+      &:after{
+
+      }
+    }
+  }
+}
 #iqub-container .section .page-product.content{
   .instant-quote-builder, .apply-filter, .cancel-reset{
     display: inline-block;
@@ -139,71 +203,7 @@
       color: $red_text_color;
     }
   }
-  .query_wrap{
-    .query{
-      color: #015995;
-      font-size: 17px;
-      cursor: pointer;
-      span{
-        border-bottom: 1px dashed #015995;
-        line-height: 35px;
-      }
-    }
-    .reply{
-      display: none;
-    }
-    &.active{
-      .reply{
-        display: inline-block;
-        position: relative;
-        border: 1px solid #d3dae1;
-        top: 18px;
-        padding: 20px;
-        margin-bottom: 18px;
-        font-size: 13px;
-        line-height: 17px;
-        color:#5d6978;
-        p{
-          padding: 14px 0;
-          margin: 0;
-        }
-        a{
-          text-decoration: underline;
-        }
 
-        &:before{
-          content: '';
-          position: absolute;
-          bottom: 100%;
-          left: 10px;
-          width: 11px; height: 18px;
-          @include background(image-url("tooltip-pointer.png")) ;
-        }
-        .white-btn.hide-btn{
-          position: absolute;
-          font-size: 13px;
-          bottom: 20px;
-          right: 20px;
-          width: 88px;
-          height: 41px;
-          text-align: center;
-          line-height: 40px;
-          &:before{
-            content:"\2227";
-            position: relative;
-            display: inline-block;
-            top: -3px;
-            left: -8px;
-            font-weight: bold;
-            font-size: 8px;
-          }
-        }
-        &:after{
-
-        }
-      }
-    }
-  }
   .product-info{
     display: inline-block; /* non-flexbox browsers */
     @include display-flex(flex);
