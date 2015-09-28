@@ -318,6 +318,7 @@
           .author_name {
             color: #005c99;
             font-size: 17px;
+            cursor: pointer;
           }
         }
       }
@@ -390,6 +391,9 @@
         background-image: url('../../images/read_more_blog.png');
         background-repeat: no-repeat;
         background-position: right 20px center;
+        &:hover {
+          background-color: #d3dae1;
+        }
       }
       @media screen and (max-width: $breakpoints960 - 1) {
         padding-top: 20px;

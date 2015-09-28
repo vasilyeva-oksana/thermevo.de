@@ -7,6 +7,10 @@
       border-bottom: 0;
       padding-top: 60px;
       margin-top: 60px;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        padding-top: 20px;
+        margin-top: 20px;
+      }
       .article_title{
         a{
           color: #e62e4c;
@@ -15,6 +19,7 @@
             text-decoration: underline;
           }
         }
+
       }
     }
     .status-text{
@@ -28,6 +33,9 @@
     }
     .right-paint{
       line-height: 27px;
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: calc( 100% - 80px );
+      }
     }
     .query_wrap{
       position: relative;
@@ -54,13 +62,24 @@
         float: left;
         padding: 0 40px 0 0 ;
         @include clearfix();
+        @media screen and (max-width: $breakpoints640 - 1) {
+          float: none;
+        }
       }
       .author_wrapp{
         .t_wrap{
           padding-left: 0;
+          width: calc( 100% - 320px );
+          @media screen and (max-width: $breakpoints640 - 1) {
+            width: 100%;
+          }
           .auth_desk{
             color: #005c99;
             font-size: 24px;
+            line-height: 32px;
+            @media screen and (max-width: $breakpoints960 - 1) {
+              font-size: 20px;
+            }
           }
           .t{
             .author_name{
@@ -68,6 +87,10 @@
               line-height: 1;
               font-size: 50px;
               color: #161d26;
+              font-weight: bold;
+              @media screen and (max-width: $breakpoints960 - 1) {
+                font-size: 30px;
+              }
             }
           }
         }
@@ -75,6 +98,16 @@
           width: calc( 100% - 320px );
           padding-top: 40px;
           display: inline-block;
+          @media screen and (max-width: $breakpoints640 - 1) {
+            width: 100%;
+            padding-top: 20px;
+          }
+        }
+        .query_wrap {
+          width: 450px;
+          @media screen and (max-width: $breakpoints1280 - 1) {
+            width: auto;
+          }
         }
       }
     }
@@ -83,6 +116,9 @@
     & > .blog_article{
       padding: 0;
       padding-bottom: 60px;
+      @media screen and (max-width: $breakpoints640 - 1) {
+        padding-bottom: 20px;
+      }
     }
   }
 }

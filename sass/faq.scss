@@ -1,0 +1,31 @@
+@import "vars";
+
+#faq-container {
+  font-family: "Ubuntu", helvetica, Arial, sans-serif;
+  &.faq {
+    padding-top: 30px;
+  }
+  .section {
+    @include clearfix();
+  }
+  h1.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding: 50px 0;
+    @media screen and (max-width: 959px) {
+      font-size: 30px;
+      padding: 20px 0;
+    }
+  }
+  .faq_top_text {
+    font-size: 17px;
+    color: #161d26;
+    padding-bottom: 60px;
+  }
+  .red-btn-link {
+    margin-bottom: 60px;
+    font-size: 24px;
+  }
+
+}

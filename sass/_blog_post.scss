@@ -99,7 +99,8 @@
             margin-bottom: 20px;
             color: #161d26;
             font-size: 17px;
-            line-height: 20px;
+            line-height: 24px;
+            font-family: "Ubuntu", helvetica, Arial, sans-serif;
           }
           & > ul{
             padding-left: 50px;
@@ -151,6 +152,9 @@
           display: inline-block;
           padding: 0 20px 0 50px;
           @include background(image-url("blog_post_comment_ico.png") 19px 15px no-repeat #e62e4c);
+          @media screen and (max-width: 460 - 1px) {
+            margin-top: 20px;
+          }
           a{
             color: #ffffff;
           }
