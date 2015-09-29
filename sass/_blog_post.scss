@@ -286,6 +286,10 @@
     margin: 10px 0px;
     margin-top: 30px;
     line-height: 19px;
+    a {
+      color: #e62e4c;
+      text-decoration: underline;
+    }
   }
 
   .message-error .close {
