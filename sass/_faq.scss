@@ -2,6 +2,14 @@
 
 #faq-container {
   font-family: "Ubuntu", helvetica, Arial, sans-serif;
+  .reply{
+    p a{
+      color: #e62e4c;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
   &.faq {
     padding-top: 30px;
     @media screen and (max-width: $breakpoints1280 - 1) {
