@@ -1,0 +1,119 @@
+#content-page {
+  color: #161d26;
+  padding: 70px 0 40px 0;
+  @media screen and (max-width: 959px) {
+    padding: 40px 0 20px 0;
+  }
+  .section {
+    @include clearfix();
+  }
+  h1.content-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 25px 0;
+    @media screen and (max-width: 959px) {
+      font-size: 30px;
+      margin: 10px 0 15px 0;
+    }
+  }
+  .content {
+    font-size: 17px;
+    line-hight: 30px;
+    a {
+      color: $red_text_color;
+      text-decoration: underline;
+    }
+    p {
+      margin: 20px 0;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: bold;
+    }
+    ul {
+      margin: 35px 0 40px 0;
+      padding-left: 0;
+      li {
+        list-style: none;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        &:before {
+          content: '\2014';
+          color: $red_text_color;
+          display: inline-table;
+          padding-right: 10px;
+        }
+      }
+    }
+    ol {
+      margin: 35px 0 40px 0;
+      padding-left: 25px;
+    }
+    li {
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+    .swiper-slide {
+      img {
+        height: auto;
+        width: 100%;
+      }
+      .swiper-desc {
+        color: #5d6978;
+        font-size: 13px;
+        padding: 20px 100px 20px 0;
+      }
+    }
+    .swiper-pagination {
+      bottom: 20px;
+      text-align: right;
+      @media screen and (max-width: 639px) {
+        display: none;
+      }
+      .swiper-pagination-bullet {
+        background-color: #d3dae1;
+        height: 10px;
+        opacity: 1;
+        width: 10px;
+        &.swiper-pagination-bullet-active {
+          background-color: #005c99;
+        }
+      }
+    }
+    @media screen and (max-width: 959px) {
+      font-size: 15px;
+      line-hight: 20px;
+      a {
+        font-size: 15px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      li {
+        line-height: 20px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      ul {
+        margin: 25px 0 20px 0;
+      }
+      ol {
+        margin: 25px 0 20px 0;
+      }
+      .swiper-slide {
+        .swiper-desc {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
