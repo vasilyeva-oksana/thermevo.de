@@ -40,6 +40,88 @@
       }
     }
   }
+  .downloads {
+    padding-top: 30px;
+    .download_link {
+      //background: url('../../images/tooltip-download_ico.png');
+      @include background(image-url("download_ico.png"));
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      padding-left: 40px;
+      padding-right: 15px;
+      height: 40px;
+      margin-right: 20px;
+      display: inline-block;
+      font-size: 13px;
+      color: #161d26;
+      line-height: 40px;
+      border: 1px solid #d3dae1;
+      font-family: "Ubuntu", helvetica, Arial, sans-serif;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+
+  .table_radio {
+    padding-top: 40px;
+    font-family: "Ubuntu", helvetica, Arial, sans-serif;
+    position: relative;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      padding-top: 20px;
+    }
+    table {
+      border:1px solid #161d26;
+      text-align: center;
+      vertical-align: middle;
+      border-collapse: initial;
+      margin-left: 25px;
+      td {
+        border-right: 1px solid #aeb0b3;
+        border-bottom: 1px solid #919599;
+        width: 39px;
+        height: 39px;
+        color: #5d6978;
+        font-size: 13px;
+        input:checked + label {
+          background: #e62e4c;
+        }
+        label {
+          padding: 0px;
+          margin: 0px;
+          width: 39px;
+          height: 40px;
+          display: block;
+          background: #d2e8f6;
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+    }
+    .subtext_table {
+      color: #5d6978;
+      font-size: 13px;
+      padding-top: 20px;
+      line-height: 19px;
+    }
+    .table_left_part {
+      color: #5d6978;
+      font-size: 13px;
+      @include transform( rotate(-90deg) );
+      position: absolute;
+      left: -40px;
+      top: 166px;
+      line-height: 13px;
+    }
+    .table_top_part {
+      color: #5d6978;
+      font-size: 13px;
+      padding-left: 65px;
+    }
+  }
+
 }
 
 .width50{
