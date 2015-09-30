@@ -160,10 +160,6 @@ $(document).ready(function(){
       paginationClickable: true
     });
   });
-  
-  var swiperContent = new Swiper('#content-page .swiper-container', {
-    pagination: '#content-page .swiper-pagination',
-  });
 
   jQuery(".faq_menu a").click(function(){
     if (jQuery(this).hasClass('active')){
