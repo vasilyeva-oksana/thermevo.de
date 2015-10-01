@@ -6,6 +6,10 @@ input:active, textarea:active {outline:none;}
 textarea {resize:none;}
 textarea {resize:vertical;}
 textarea {resize:horizontal;}
+select{
+  padding-left: 10px;
+}
+
 button:active, button:focus {
   outline: none;
 }
