@@ -841,7 +841,15 @@
     }
   }
   .what {
-    border-bottom: 1px dotted #015995;
+    width: calc( 100% - 180px );
+    &.query_wrap.active .reply:before{
+      left: auto;
+      right: 10px;
+    }
+    .query{
+      text-align: right;
+    }
+    /*border-bottom: 1px dotted #015995;*/
     color: #015995;
     display: inline-block;
     float: right;
@@ -850,10 +858,19 @@
     @media screen and (max-width: 639px) {
       clear: both;
       float: left;
+      width: 100%;
+      &.query_wrap.active .reply:before{
+        left: 10px;
+        right: left;
+      }
+      .query{
+        text-align: left;
+      }
     }
     @media screen and (max-width: 959px) {
       font-size: 15px;
     }
+
   }
 }
 .my-articles-table {
