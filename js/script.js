@@ -175,6 +175,79 @@ $(document).ready(function(){
     return false;
   });
 
+  $('.create-article-add-slider-item input[type="file"]').on('change', function(e){
+    var canvas = $(this).closest('.create-article-add-slider-item').find('.images-preview-canvas')[0];
+    //console.log($(canvas).closest('.image-preview').width());
+    handleImage(canvas,e);
+    return false;
+  });
+
+  function handleImage(canvas, e){
+    var reader = new FileReader();
+    reader.onload = function(event){
+      var ctx = canvas.getContext('2d');
+      var img = new Image();
+      var w = $(canvas).width();
+      var h = $(canvas).height();
+      $(canvas).closest('.image-preview').css('background-image','none');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      img.onload = function(){
+        drawImageProp(ctx,img,0,0,w,h);
+        //ctx.drawImage(img,0,0,img.width,img.height,0,0,w,h);
+      }
+      img.src = event.target.result;
+    }
+    reader.readAsDataURL(e.target.files[0]);
+  }
+
+  function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
+
+    if (arguments.length === 2) {
+      x = y = 0;
+      w = ctx.canvas.width;
+      h = ctx.canvas.height;
+    }
+
+    /// default offset is center
+    offsetX = offsetX ? offsetX : 0.5;
+    offsetY = offsetY ? offsetY : 0.5;
+
+    /// keep bounds [0.0, 1.0]
+    if (offsetX < 0) offsetX = 0;
+    if (offsetY < 0) offsetY = 0;
+    if (offsetX > 1) offsetX = 1;
+    if (offsetY > 1) offsetY = 1;
+
+    var iw = img.width,
+      ih = img.height,
+      r = Math.min(w / iw, h / ih),
+      nw = iw * r,   /// new prop. width
+      nh = ih * r,   /// new prop. height
+      cx, cy, cw, ch, ar = 1;
+
+    /// decide which gap to fill
+    if (nw < w) ar = w / nw;
+    if (nh < h) ar = h / nh;
+    nw *= ar;
+    nh *= ar;
+
+    /// calc source rectangle
+    cw = iw / (nw / w);
+    ch = ih / (nh / h);
+
+    cx = (iw - cw) * offsetX;
+    cy = (ih - ch) * offsetY;
+
+    /// make sure source rectangle is valid
+    if (cx < 0) cx = 0;
+    if (cy < 0) cy = 0;
+    if (cw > iw) cw = iw;
+    if (ch > ih) ch = ih;
+
+    /// fill image in dest. rectangle
+    ctx.drawImage(img, cx, cy, cw, ch,  x, y, w, h);
+  }
+
 });
 (function($) {
   $(window).resize(function() {

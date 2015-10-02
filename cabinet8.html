@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thermevo</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/swiper/swiper.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="css/jscrollpane/jquery.jscrollpane.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="css/compiled/style.css" media="all" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/swiper/swiper.min.js"></script>
+  <script src="js/jquery.jscrollpane.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="page">
+    <header id="header">
+      <div class="section">
+        <div class="header-top">
+          <div class="left">
+            <img src="images/logo.png" height="46" width="295" alt="logo">
+          </div>
+          <div class="right">
+           <form action="#" class="search-form">
+             <input type="text">
+             <div class="search-toggle"></div>
+           </form>
+           <div class="menu-btn-mobile"></div>
+            <a href="#" class="cart-link">Mein Quotation</a>
+            <a href="#" class="login-link">Аnmelden</a>
+            <div class="language-btn">
+              <ul class="language-menu">
+                <li class="germany"><a href="#" class="active">Deutsch</a></li>
+                <li class="english"><a href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-menus-container">
+          <div id="header-menu-left">
+            <ul>
+              <li><a class="active" href="#">Instant Quote Builder</a></li>
+              <li><a href="#">ThermevoBlog</a></li>
+              <li><a href="#">Rechenservice</a></li>
+            </ul>
+          </div>
+          <div id="header-menu-right">
+            <ul>
+              <li><a href="#">Über Uns</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="cabinet-menu">
+      <div class="section">
+        <ul>
+          <li class="menu-messages"><a href="#">Messages<span class="count">+2</span></a></li>
+          <li class="menu-profile"><a href="#">Profile</a></li>
+          <li class="menu-iqub"><a href="#">Meine IQUB</a></li>
+          <li class="menu-blog"><a href="#" class="active">Blog</a></li>
+          <li class="menu-calculations"><a href="#">Calculations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="cabinet-container" class="create-article">
+      <div class="section">
+        <div class="filtr">
+          <div class="menu">
+            <div class="btn-filtr"><a href="#">My articles</a></div>
+            <div class="btn-filtr"><a href="#">Articles I like</a></div>
+            <div class="btn-filtr"><a href="#">My comments</a></div>
+            <div class="btn-filtr active"><a href="#">Create a new article</a></div>
+          </div>
+        </div>
+        <div class="profile-content">
+          <div class="profile-title">
+            <h1 class="">Create a new article</h1>
+          </div>
+          <div class="my-articles-container">
+            <div class="message-error">
+              <div class="close"></div>
+              Unfortunately, your article has not passed moderation. Please make all changes, sent you by e-mail. And sent you article again. You can follow the article status change at page
+              <a href="#">My Articles</a>
+            </div>
+            <h2>Posting rules</h2>
+            <div class="text">Before posting the material; which is made by THERMEVOBlog members; it is to be moderated with our editors. Your text should meet the criteria of "POSTING RULES".</div>
+            <div class="query_wrap">
+              <div class="query">
+                <span>Read more</span>
+              </div>
+              <div class="reply" style="display: none;">
+                <p><a href="#" class="red-text">Mehr Informationen darüber</a></p>
+                <p>Der für Thermix® TX.N® plus Abstandhalter verwendete Kunststoff hat eine 700-fach geringere Wärmeleitfähigkeit als Aluminium und ist die Basis des Abstandhalters. Er ist mit dünnem Edelstahl ummantelt, der eine über 10-fach geringere Wärmeleitfähigkeit als Aluminium hat.</p>
+                <iframe src="https://player.vimeo.com/video/137260178?badge=0" width="250" height="200"></iframe>
+                <div class="white-btn hide-btn">Hide</div>
+              </div>
+            </div>
+            <input type="checkbox" id="create-article-checkbox-1"><label for="create-article-checkbox-1">I have read and agree with POSTING RULES</label>
+            <h2>Post an Article</h2>
+            <div class="post-an-article-row">
+              <label for="create-article-text-1">Title</label>
+              <div class="label-right">Maximum of 200 characters, incl. blanks. <a href="#">Read more</a></div>
+              <input type="text" id="create-article-text-1">
+              <div class="description">You can write: 200 characters</div>
+            </div>
+            <div class="post-an-article-row">
+              <label for="create-article-textarea-1">Short precis</label>
+              <div class="label-right">Short presis is put on Blog Homepage. Maximum of 500 characters, incl. blanks. <a href="#">Read more</a></div>
+              <textarea name="111" id="create-article-textarea-1" cols="120" rows="3"></textarea>
+              <div class="description">You can write: 500 characters</div>
+            </div>
+            <div class="post-an-article-row">
+              <label for="create-article-textarea-2">Article text</label>
+              <textarea name="222" id="create-article-textarea-2" cols="120" rows="10"></textarea>
+              <div class="description">You can write: 200 characters</div>
+            </div>
+            <h2>Slider block</h2>
+            <div class="text">You can puplist the slider of 5 pictures</div>
+            <div class="query_wrap">
+              <div class="query">
+                <span>Read more</span>
+              </div>
+              <div class="reply" style="display: none;">
+                <p><a href="#" class="red-text">Mehr Informationen darüber</a></p>
+                <p>Der für Thermix® TX.N® plus Abstandhalter verwendete Kunststoff hat eine 700-fach geringere Wärmeleitfähigkeit als Aluminium und ist die Basis des Abstandhalters. Er ist mit dünnem Edelstahl ummantelt, der eine über 10-fach geringere Wärmeleitfähigkeit als Aluminium hat.</p>
+                <iframe src="https://player.vimeo.com/video/137260178?badge=0" width="250" height="200"></iframe>
+                <div class="white-btn hide-btn">Hide</div>
+              </div>
+            </div>
+            <div class="create-article-add-slider-container">
+              <div class="create-article-add-slider-item">
+                <div class="image-preview">
+                  <canvas id="images-preview-canvas-1" class="images-preview-canvas"></canvas>
+                </div>
+                <div class="right-container">
+                  <div class="item">
+                    <div class="slide-number">Slide 1</div>
+                    <input type="file" id="slide1">
+                    <label for="slide1" class="label-file">Choose the picture</label>
+                    <div class="description">Min image Width:- 200 px, Max Size ofthe image - 5 MB</div>
+                  </div>
+                  <div class="item">
+                    <label for="caption-picture1">The caption of the picture</label>
+                    <input type="text" id="caption-picture1">
+                    <div class="description">You can write: 200 characters</div>
+                  </div>
+                </div>
+              </div>
+              <div class="create-article-add-slider-item">
+                <div class="image-preview">
+                  <canvas id="images-preview-canvas-2" class="images-preview-canvas"></canvas>
+                </div>
+                <div class="right-container">
+                  <div class="item">
+                    <div class="slide-number">Slide 2</div>
+                    <input type="file" id="slide2">
+                    <label for="slide2" class="label-file">Choose the picture</label>
+                    <div class="description">Min image Width:- 200 px, Max Size ofthe image - 5 MB</div>
+                  </div>
+                  <div class="item">
+                    <label for="caption-picture1">The caption of the picture</label>
+                    <input type="text" id="caption-picture1">
+                    <div class="description">You can write: 200 characters</div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-item-container">
+                <div class="add-item">Add the picture</div>
+              </div>
+              <h2>Signature to the article</h2>
+              <input type="checkbox" id="create-article-checkbox-2"><label for="create-article-checkbox-2">Svetlana Gredzheva, Aditim</label><br>
+              <input type="checkbox" id="create-article-checkbox-3"><label for="create-article-checkbox-3">Svetlana Gredzheva</label>
+              <div class="add-slider-actions">
+                <div class="save">Save</div>
+                <div class="preview">Preview</div>
+                <div class="sent">Sent the article</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="after-cabinet-container">
+      <div class="section">
+        <div class="icon-right"></div>
+        <div class="icon-left"></div>
+        <div class="text-nomobile">Falls Sie einen Fehler bemerken, mit inkorrekter Arbeit der Kundendienst zusammenstoßen oder tolle Ideen für Thermevo zu verbessen haben — bitte geben Sie uns Bescheid!</div>
+        <div class="text-mobile">Noticed an error?</div>
+      </div>
+    </div>
+    <div id="three-blocks">
+      <div class="section">
+        <div class="block">
+          <div class="t">Automatiziertes<br> Kaufsystem</div>
+          <div class="m">Es spart Eure Zeit und Geld ein</div>
+          <div class="b"><a href="#">Versuchen</a></div>
+        </div>
+        <div class="block">
+          <div class="t">Online Rechnenservice</div>
+          <div class="m">Jenes, was vorher eine Woche brauchte, jetzt nimmt nur einen halben Stunde</div>
+          <div class="b"><a href="#">Versuchen</a></div>
+        </div>
+        <div class="block">
+          <div class="t">ThermevoBlog</div>
+          <div class="m">Nötige Information<br> und Netzwerk für Fachleute</div>
+          <div class="b"><a href="#">Macht mit</a></div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="section">
+        <div class="top">
+          <img class="footer-logo" src="images/logo_footer.png" height="46" width="295" alt="logo">
+          <div class="right">
+            <div class="social-container">
+              <a href="#" class="in"></a>
+              <a href="#" class="fb"></a>
+            </div>
+            <div class="label">We in social networks</div>
+          </div>
+        </div>
+        <div class="mid">
+          <ul class="footer-menu">
+            <li>
+              <a class="active" href="#">Instant Quote Builder</a>
+              <ul>
+                <li><a href="#">Polyamid Isolierstege</a></li>
+                <li><a href="#">АBС-Isolierstege</a></li>
+                <li><a href="#">Geschäumte Profile</a></li>
+                <li><a class="active" href="#">PVC Profile</a></li>
+                <li><a class="allocated" href="#">Upload your drawing</a></li>
+                <li><a href="#">IQUB FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ThermevoBlog</a>
+              <ul>
+                <li><a href="#">Latest publications</a></li>
+                <li><a href="#">Editor's Choice</a></li>
+                <li><a href="#">Popular articles</a></li>
+                <li><a href="#">Blog FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+              <ul>
+                <li><a class="allocated" href="#">Call soon</a></li>
+                <li><a class="allocated" href="#">Call at a convenient time</a></li>
+                <li><a class="allocated" href="#">Write to us</a></li>
+                <li class="cantact-info"><span class="location-icon"></span>Office address<br>info@thermevo.de<br>+1234567789</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Reshenservie</a>
+              <ul>
+                <li><a href="#">Learn more about the service</a></li>
+                <li><a href="#">Reshenservie FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Uber Uns</a>
+              <ul>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projekt-Regeln</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="before-bottom">
+          Wie benutzen wärmetechnische Berechnungen Online?<br> 
+          Wie arbeitet IQUB?<br>
+          Was ist ThermevoBlog?<br>
+        </div>
+        <div class="bot">
+          <div class="left">
+            <span class="copyright">© 2015 ThermEVO</span>
+            <a class="allocated" href="#">Legal Stuff</a>
+            <a class="allocated" href="#">Privacy Policy</a>
+          </div>
+          <div class="right">
+            <div class="social-share-container">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="in"></a>
+              <a href="#" class="fb"></a>
+            </div>
+            <div class="label">Like the project?</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
