@@ -19,6 +19,43 @@ function getInternetExplorerVersion()
 }
 
 $(document).ready(function(){
+  var form_slide_id = 1;
+  var form_slide = "";
+
+  $(".add-item-container .add-item").click(function(){
+
+    if(form_slide_id < 5 ){
+      if( $("input#slide"+form_slide_id).val() != "" ){
+        $("input#slide"+form_slide_id).parent().parent().parent().css("border", "0");
+        form_slide_id++;
+        form_slide = '<div class="create-article-add-slider-item">';
+        form_slide += '<div class="image-preview">';
+        form_slide += '<canvas id="images-preview-canvas-'+form_slide_id+'" class="images-preview-canvas"></canvas>';
+        form_slide += '</div>';
+        form_slide += '<div class="right-container">';
+        form_slide += '<div class="item">';
+        form_slide += '<div class="slide-number">Slide '+form_slide_id+'</div>';
+        form_slide += '<input name="slide[]" type="file" id="slide'+form_slide_id+'">';
+        form_slide += '<label for="slide'+form_slide_id+'" class="label-file">Choose the picture</label>';
+        form_slide += '<div class="description">Min image Width:- 200 px, Max Size ofthe image - 5 MB</div>';
+        form_slide += '</div>';
+        form_slide += '<div class="item">';
+        form_slide += '<label for="caption-picture'+form_slide_id+'">The caption of the picture</label>';
+        form_slide += '<input type="text" id="caption-picture1">';
+        form_slide += '<div class="description">You can write: 200 characters</div>';
+        form_slide += '</div>';
+        form_slide += '</div>';
+        form_slide += '</div>';
+        $(".wrap_from_slide").append(form_slide);
+        if( form_slide_id == 5 ){
+          $(".add-item-container").remove();
+        }
+      } else {
+        $("input#slide"+form_slide_id).parent().parent().parent().css("border", "1px solid #e62e4c");
+      }
+    }
+  });
+
   $('.scroll-pane').jScrollPane({showArrows: true, arrowScrollOnHover: true, wheelSpeed: 120, autoReinitialise: true});
   $(".show-filtr-catalog").click(function(){
     $(".filtr_radio_checkbox").slideToggle();
@@ -175,7 +212,7 @@ $(document).ready(function(){
     return false;
   });
 
-  $('.create-article-add-slider-item input[type="file"]').on('change', function(e){
+  $(".wrap_from_slide").on('change', '.create-article-add-slider-item input[type="file"]', function(e){
     var canvas = $(this).closest('.create-article-add-slider-item').find('.images-preview-canvas')[0];
     //console.log($(canvas).closest('.image-preview').width());
     handleImage(canvas,e);
