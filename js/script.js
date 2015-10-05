@@ -212,6 +212,33 @@ $(document).ready(function(){
     return false;
   });
 
+  $('.list-adresses-links a').on('click', function() {
+    var postcode = $(this).attr('data-postcode');
+    var country  = $(this).attr('data-country');
+    var city     = $(this).attr('data-city');
+    var adress   = $(this).attr('data-adress');
+    var title    = $(this).text();
+    $('.adress-form #postcode').val(postcode);
+    $('.adress-form #country').val(country);
+    $('.adress-form #city').val(city);
+    $('.adress-form #adress').val(adress);
+    $('.list-adresses-links a').removeClass('active');
+    $('.adress-form h2').text(title);
+    $(this).addClass('active');
+    return false;
+  });
+
+  $('.add-adress').on('click', function() {
+    var title = $(this).text();
+    $('.list-adresses-links a').removeClass('active');
+    $('.adress-form #postcode').val('');
+    $('.adress-form #country').val('');
+    $('.adress-form #city').val('');
+    $('.adress-form #adress').val('');
+    $('.adress-form h2').text(title);
+    return false;
+  });
+
   $(".wrap_from_slide").on('change', '.create-article-add-slider-item input[type="file"]', function(e){
     var canvas = $(this).closest('.create-article-add-slider-item').find('.images-preview-canvas')[0];
     //console.log($(canvas).closest('.image-preview').width());

@@ -117,6 +117,7 @@
     padding-top: 30px;
   }
   &.profile,
+  &.company-information,
   &.my-comments,
   &.cabinet-settings,
   &.create-article,
@@ -1633,4 +1634,215 @@
   display: inline-block;
   width: 100%;
 }
+.tabs-link-container {
+  display: inline-block;
+  margin: 40px 0 20px 0;
+  width: 100%;
+  .link-container {
+    @include box-sizing(border-box);
+    display: inline-block;
+    height: 56px;
+    float: left;
+    margin: 10px 20px 10px 0;
+    @media screen and (min-width: $breakpoints640) and (max-width: 1279px) {
+      &:nth-child(1) {
+        width: 178px;
+      }
+      &:nth-child(2) {
+        width: 104px;
+      }
+      &:nth-child(3) {
+        width: 100px;
+      }
+      &:nth-child(4) {
+        width: 130px;
+      }
+    }
+    @media screen and (max-width: 639px) {
+      width: 100%;
+    }
+  }
+  a {
+    @include box-sizing(border-box);
+    border: 1px solid #d3dae1;
+    color: #161d26;
+    display: table-cell;
+    font-size: 17px;
+    height: 56px;
+    line-height: normal;
+    padding: 0 24px;
+    vertical-align: middle;
+    @media screen and (max-width: 1279px) {
+      padding: 0 18px;
+    }
+    @media screen and (max-width: 639px) {
+      display: inline-block;
+      line-height: 56px;
+      width: 100%;
+    }
+    &:hover,
+    &.active {
+      border: 1px solid #d3dae1;
+      background: #015995;
+      color: #fff;
+    }
+  }
+}
+.adress-form {
+  display: inline-block;
+  float: left;
+  width: 440px;
+  @media screen and (min-width: $breakpoints640) and (max-width: 1279px) {
+    width: 280px;
+  }
+  @media screen and (max-width: 639px) {
+    width: 100%;
+  }
+  .form-item {
+    display: inline-block;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    @media screen and (max-width: 959px) {
+      margin: 10px 0;
+    }
+  }
+  label {
+    color: #5d6978;
+    font-size: 13px;
+    margin: 0;
+    @media screen and (max-width: 959px) {
+      font-size: 11px;
+    }
+  }
+  input[type=text] {
+    @include box-sizing(border-box);
+    border: 1px solid #161d26;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #161d26;
+    font-size: 15px;
+    height: 40px;
+    padding: 0 15px;
+    width: 100%;
+    @media screen and (max-width: 959px) {
+      font-size: 13px;
+    }
+  }
+  textarea {
+    @include box-sizing(border-box);
+    border: 1px solid #161d26;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #161d26;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    @media screen and (max-width: 959px) {
+      font-size: 13px;
+    }
+  }
+  .form-actions {
+    display: inline-block;
+    height: 60px;
+    margin: 12px 0 60px 0;
+    input[type=submit] {
+      @include border-radius(0);
+      background-color: $red_text_color;
+      border: none;
+      color: #fff;
+      display: inline-block;
+      float: left;
+      font-size: 24px;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 40px 0 30px;
+      @media screen and (max-width: 959px) {
+        font-size: 17px;
+      }
+    }
+    .submit-arrow {
+      display: inline-block;
+      height: 60px;
+      @include background(image-url("red_btn_after_60.png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: relative;
+      width: 33px;
+      &:before {
+        @include background(image-url("red_btn_icon.png"));
+        background-repeat: no-repeat;
+        background-position: center;
+        content: '';
+        height: 60px;
+        position: absolute;
+        left: -8px;
+        width: 16px;
+        z-index: 3;
+        border-left-color: #fff;
+      }
+    }
+    &:hover {
+      input[type=submit] {
+        background-color: #ff4060;
+      }
+      .submit-arrow{
+        background-position: 0 -60px;
+      }
+    }
+  }
+}
+.list-adresses {
+  display: inline-block;
+  float: right;
+  width: 280px;
+  @media screen and (max-width: 639px) {
+    width: 100%;
+  }
+  .list-adresses-links {
+    a {
+      color: $red_text_color;
+      display: inline-block;
+      font-size: 17px;
+      margin: 20px 0;
+      text-decoration: underline;
+      width: 100%;
+      @media screen and (max-width: 959px) {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+      &:hover,
+      &.active {
+        color: #161d26;
+        font-size: 17px;
+        text-decoration: none;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .add-adress {
+    @include box-sizing(border-box);
+    border: 1px solid #d3dae1;
+    color: #161d26;
+    display: inline-block;
+    font-size: 17px;
+    height: 60px;
+    line-height: 60px;
+    margin: 20px 0;
+    padding: 0 30px;
+    text-decoration: none;
+    @media screen and (max-width: 959px) {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+    &:hover {
+      background-color: #d3dae1;
+    }
+  }
+}
+
 
