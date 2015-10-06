@@ -1,24 +1,25 @@
-function getInternetExplorerVersion()
-{
-  var rv = -1;
-  if (navigator.appName == 'Microsoft Internet Explorer')
+(function($) {
+  function getInternetExplorerVersion()
   {
-    var ua = navigator.userAgent;
-    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-    if (re.exec(ua) != null)
-      rv = parseFloat( RegExp.$1 );
+    var rv = -1;
+    if (navigator.appName == 'Microsoft Internet Explorer')
+    {
+      var ua = navigator.userAgent;
+      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+        rv = parseFloat( RegExp.$1 );
+    }
+    else if (navigator.appName == 'Netscape')
+    {
+      var ua = navigator.userAgent;
+      var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null)
+        rv = parseFloat( RegExp.$1 );
+    }
+    return rv;
   }
-  else if (navigator.appName == 'Netscape')
-  {
-    var ua = navigator.userAgent;
-    var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
-    if (re.exec(ua) != null)
-      rv = parseFloat( RegExp.$1 );
-  }
-  return rv;
-}
 
-$(document).ready(function(){
+  $(document).ready(function(){
   var form_slide_id = 1;
   var form_slide = "";
 
@@ -313,11 +314,38 @@ $(document).ready(function(){
   }
 
 });
-(function($) {
+
   $(window).resize(function() {
     var sectionW = $('#header .section').width();
     var leftW = $('#header .left').width();
     var inputW = sectionW - 70;
     $('#header .header-top.active .search-form input[type="text"]').width(inputW);
+  });
+  $(window).load(function() {
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('contacts-map'), {
+        zoom: 4,
+        center: {lat: -33, lng: 151}
+      });
+
+      var image = {
+        url: 'images/map_marker.png',
+        size: new google.maps.Size(60, 70),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(35, 70)
+      };
+      var marker = new google.maps.Marker({
+        position: {lat: -33.890, lng: 151.274},
+        map: map,
+        icon: image
+      });
+      google.maps.event.addListener(map, 'zoom_changed', function(){
+        map.setCenter( marker.getPosition() );
+      });
+      google.maps.event.addDomListener(window, 'resize', function() {
+        map.setCenter( marker.getPosition() );
+      });
+    }
+    initMap();
   });
 })(jQuery);

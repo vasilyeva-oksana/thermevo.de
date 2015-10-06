@@ -1,0 +1,202 @@
+#contacts {
+  border-top: 1px solid #d3dae1;
+  color: #161d26;
+  padding-top: 80px;
+  @media screen and (max-width: 959px) {
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 639px) {
+    position: relative;
+    top: -3px;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    @media screen and (max-width: 959px) {
+      font-size: 30px;
+    }
+  }
+  .text {
+    font-size: 17px;
+    margin: 40px 0;
+    @media screen and (max-width: 959px) {
+      font-size: 15px;
+      margin: 30px 0;
+    }
+  }
+  .wrap {
+    display: inline-block;
+    width: 100%;
+  }
+  .contacts-menu-container {
+    display: inline-block;
+    margin: 10px 0 100px 0;
+    width: 100%;
+    a {
+      @include box-sizing(border-box);
+      border: 1px solid #d3dae1;
+      display: inline-block;
+      float: left;
+      height: 340px;
+      padding: 0 40px;
+      text-align: center;
+      text-decoration: none;
+      width: 386px;
+      @media screen and (max-width: 1279px) {
+        padding: 0 20px;
+        width: 280px;
+      }
+      @media screen and (max-width: 639px) {
+        margin-top: 20px;
+        width: 100%;
+      }
+      &:nth-child(1) {
+        margin-right: 41px;
+        @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+          margin-right: 40px;
+        }
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          margin-right: 40px;
+          width: 280px;
+        }
+        .icon {
+          background-position: 0 0;
+        }
+      }
+      &:nth-child(2) {
+        margin-right: 41px;
+        @media screen and (min-width: $breakpoints960) and (max-width: 1279px) {
+          margin-right: 40px;
+        }
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          margin-right: 0;
+          width: 280px;
+        }
+        .icon {
+          background-position: 0 -90px;
+        }
+      }
+      &:nth-child(3) {
+        .icon {
+          background-position: 0 -180px;
+        }
+        @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
+          margin-top: 80px;
+        }
+        @media screen and (max-width: 959px) {
+          width: 100%;
+        }
+      }
+      &:hover {
+        border: 1px solid $red_text_color;
+        .title {
+          color: $red_text_color;
+        }
+      }
+    }
+    .icon {
+      @include background-image(image-url("contacts1_sprite.png"));
+      display: inline-block;
+      height: 90px;
+      margin: 35px 0;
+      width: 90px;
+    }
+    .title {
+      color: #005c99;
+      font-size: 17px;
+      display: block;
+    }
+    .desc {
+      color: #5d6978;
+      font-size: 13px;
+      display: block;
+    }
+  }
+  .contacts-offices-container {
+    margin-bottom: 40px;
+    .item {
+      display: inline-block;
+      float: left;
+      padding-right: 40px;
+      width: 280px;
+      h3 {
+        font-size: 17px;
+        text-transform: uppercase;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+      }
+      .location {
+        @include box-sizing(border-box);
+        font-size: 17px;
+        margin: 12px 0;
+        position: relative;
+        padding-left: 30px;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+        &:before {
+          @include background-image(image-url("offices_sprite.png"));
+          background-position: 0 0;
+          content: '';
+          left: 0;
+          height: 16px;
+          position: absolute;
+          top: 5px;
+          width: 14px;
+        }
+      }
+      .phone {
+        @include box-sizing(border-box);
+        font-size: 17px;
+        margin: 12px 0;
+        position: relative;
+        padding-left: 30px;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+        &:before {
+          @include background-image(image-url("offices_sprite.png"));
+          background-position: 0 -16px;
+          content: '';
+          left: 0;
+          height: 13px;
+          position: absolute;
+          top: 5px;
+          width: 14px;
+        }
+      }
+      .email {
+        @include box-sizing(border-box);
+        color: $red_text_color;
+        display: block;
+        font-size: 17px;
+        margin: 12px 0;
+        position: relative;
+        padding-left: 30px;
+        text-decoration: underline;
+        @media screen and (max-width: 959px) {
+          font-size: 15px;
+        }
+        &:before {
+          @include background-image(image-url("offices_sprite.png"));
+          background-position: 0 -29px;
+          content: '';
+          left: 0;
+          height: 11px;
+          position: absolute;
+          top: 7px;
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+#contacts-map {
+  height: 570px;
+  margin-bottom: 60px;
+  width: 100%;
+  @media screen and (max-width: 959px) {
+    margin-bottom: 40px;
+  }
+}
