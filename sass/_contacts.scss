@@ -200,3 +200,246 @@
     margin-bottom: 40px;
   }
 }
+.contacts2-menu {
+  padding-left: 0;
+  border-bottom: 1px solid #d3dae1;
+  height: 80px;
+  margin-top: 40px;
+  @media screen and (max-width: $breakpoints640 - 1) {
+    height: 60px;
+  }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+    height: 80px;
+    @media screen and (max-width: $breakpoints640 - 1) {
+      height: 60px;
+      margin-right: 11px;
+    }
+    &:nth-child(1) {
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        width: 176px;
+      }
+      span {
+        @include background-image(image-url("contacts2_menu1.png"));
+      }
+    }
+    &:nth-child(2) {
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        width: 220px;
+      }
+      span {
+        @include background-image(image-url("contacts2_menu2.png"));
+      }
+    }
+    &:nth-child(3) {
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        width: 164px;
+      }
+      @media screen and (max-width: $breakpoints960 - 1) {
+        margin-right: 0;
+      }
+      span {
+        @include background-image(image-url("contacts2_menu3.png"));
+      }
+    }
+    a {
+      height: 80px;
+      display: inline-block;
+      background: #c8e5f9;
+      color: #161d26;
+      font-size: 17px;
+      line-height: 80px;
+      padding: 0 20px 0 80px;
+      position: relative;
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        @include box-sizing(border-box);
+        display: table-cell;
+        line-height: normal;
+        padding: 0 10px 0 80px;
+        vertical-align: middle;
+      }
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-indent: -9999px;
+        padding: 0;
+      }
+      &:hover, &.active {
+        background-color: #015995;
+        color: white;
+        span {
+          background-position: 0 -40px;
+        }
+      }
+      span {
+        background-position: 0 0;
+        display: inline-block;
+        height: 40px;
+        left: 20px;
+        position: absolute;
+        top: 20px;
+        width: 40px;
+        @media screen and (max-width: $breakpoints640 - 1) {
+          left: 10px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+.contacts2-menu3-container {
+  max-width: 920px;
+  .form-item {
+    display: inline-block;
+    margin: 20px 0;
+    width: 100%;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      margin: 10px 0;
+    }
+    &.width50-left {
+      float: left;
+      width: 440px;
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        width: 280px;
+      }
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: 100%;
+      }
+    }
+    &.width50-right {
+      float: right;
+      width: 440px;
+      @media screen and (min-width: $breakpoints640) and (max-width: $breakpoints960 - 1) {
+        width: 280px;
+      }
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: 100%;
+      }
+    }
+    &.error {
+      .error-text {
+        display: block;
+      }
+      input[type=text] {
+        border: 1px solid $red_text_color;
+      }
+    }
+    label {
+      color: #5d6978;
+      font-size: 13px;
+      margin: 0;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 11px;
+      }
+      span {
+        color: $red_text_color;
+        margin-right: 5px;
+      }
+    }
+    input[type=text] {
+      @include box-sizing(border-box);
+      @include border-radius(0);
+      border: 1px solid #161d26;
+      color: #161d26;
+      font-size: 13px;
+      height: 40px;
+      padding: 0 15px;
+      width: 100%;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 11px;
+      }
+    }
+    textarea {
+      @include box-sizing(border-box);
+      border: 1px solid #161d26;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      color: #161d26;
+      font-size: 15px;
+      padding: 15px;
+      width: 100%;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 13px;
+      }
+    }
+    select {
+      background-color: #fff;
+      border: none;
+      border: 1px solid #161d26;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      color: #161d26;
+      font-size: 17px;
+      height: 40px;
+      width: 100%;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 15px;
+      }
+    }
+    .error-text {
+      color: $red_text_color;
+      display: none;
+      font-size: 13px;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 11px;
+      }
+    }
+  }
+  .form-actions {
+    display: inline-block;
+    height: 60px;
+    margin: 12px 0 60px 0;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      margin: 12px 0 40px 0;
+    }
+    input[type=submit] {
+      @include border-radius(0);
+      background-color: $red_text_color;
+      border: none;
+      color: #fff;
+      display: inline-block;
+      float: left;
+      font-size: 24px;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 40px 0 30px;
+      @media screen and (max-width: $breakpoints960 - 1) {
+        font-size: 17px;
+      }
+    }
+    .submit-arrow {
+      display: inline-block;
+      height: 60px;
+      @include background(image-url("red_btn_after_60.png"));
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: relative;
+      width: 33px;
+      &:before {
+        @include background(image-url("red_btn_icon.png"));
+        background-repeat: no-repeat;
+        background-position: center;
+        content: '';
+        height: 60px;
+        position: absolute;
+        left: -8px;
+        width: 16px;
+        z-index: 3;
+        border-left-color: #fff;
+      }
+    }
+    &:hover {
+      input[type=submit] {
+        background-color: #ff4060;
+      }
+      .submit-arrow{
+        background-position: 0 -60px;
+      }
+    }
+  }
+}

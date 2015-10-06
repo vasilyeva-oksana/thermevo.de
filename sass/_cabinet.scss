@@ -159,7 +159,7 @@
       color: #161d26;
       font-size: 17px;
       height: 40px;
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: $breakpoints960 - 1) {
         width: 100%;
       }
     }
@@ -715,7 +715,7 @@
       color: #5d6978;
       font-size: 13px;
       margin: 0;
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: $breakpoints960 - 1) {
         font-size: 11px;
       }
     }
@@ -729,7 +729,7 @@
       height: 40px;
       padding: 0 15px;
       width: 100%;
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: $breakpoints960 - 1) {
         font-size: 11px;
       }
     }
@@ -1259,7 +1259,7 @@
     float: left;
     line-height: 25px;
     margin: 0;
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $breakpoints960 - 1) {
       font-size: 11px;
       line-height: 20px;
     }
@@ -1270,7 +1270,7 @@
     display: inline-block;
     float: right;
     line-height: 25px;
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $breakpoints960 - 1) {
       font-size: 11px;
       line-height: 20px;
     }
@@ -1278,7 +1278,7 @@
       color: $red_text_color;
       font-size: 13px;
       text-decoration: underline;
-      @media screen and (max-width: 959px) {
+      @media screen and (max-width: $breakpoints960 - 1) {
         font-size: 11px;
       }
       &:hover {
@@ -1291,7 +1291,7 @@
     font-size: 13px;
     line-height: 25px;
     text-align: right;
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $breakpoints960 - 1) {
       font-size: 11px;
       line-height: 20px;
     }
@@ -1307,7 +1307,7 @@
     height: 40px;
     padding: 0 15px;
     width: 100%;
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $breakpoints960 - 1) {
       font-size: 13px;
     }
   }
@@ -1321,7 +1321,7 @@
     font-size: 15px;
     padding: 15px;
     width: 100%;
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: $breakpoints960 - 1) {
       font-size: 13px;
     }
   }
