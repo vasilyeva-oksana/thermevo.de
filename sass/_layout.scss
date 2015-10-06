@@ -2849,3 +2849,66 @@ START basket
     }
   }
 }
+.popup-bg {
+  background-color: rgba(0,0,0,0.75);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+.popup-container {
+  @include box-sizing(border-box);
+  @include transform(translate(-50%, -50%));
+  background-color: #fff;
+  color: #161d26;
+  font-size: 17px;
+  left: 50%;
+  max-width: 600px;
+  padding: 50px 30px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  z-index: 501;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .popup-text {
+    margin: 40px 0;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      margin: 20px 0;
+    }
+  }
+  .popup-red-btn {
+    @include box-sizing(border-box);
+    background-color: $red_text_color;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    text-decoration: none;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      font-size: 15px;
+    }
+    &:hover {
+      background-color: #ff4060;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: $breakpoints960 - 1) {
+    padding: 40px 20px;
+    font-size: 15px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+}
