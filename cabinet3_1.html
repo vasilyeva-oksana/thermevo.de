@@ -57,14 +57,110 @@
         </div>
       </div>
     </header>
-    <div id="content-page">
+    <div id="cabinet-menu">
       <div class="section">
-        <h1 class="content-title">Thank you for verification!</h1>
-        <div class="content">
-          <button type="submit" class="red-btn-link">Go to your personal account</button>
-          <br>
-          <br>
-          <button type="submit" class="red-btn-link">Go to Instant Quote Builder</button>
+        <ul>
+          <li class="menu-messages"><a href="#">Messages<span class="count">+2</span></a></li>
+          <li class="menu-profile "><a href="#" class="active">Profile</a></li>
+          <li class="menu-iqub"><a href="#">Meine IQUB</a></li>
+          <li class="menu-blog"><a href="#">Blog</a></li>
+          <li class="menu-calculations"><a href="#">Calculations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="cabinet-container" class="cabinet-settings">
+      <div class="section">
+        <div class="filtr">
+          <div class="menu">
+            <div class="btn-filtr"><a href="#">Personal information</a></div>
+            <div class="btn-filtr"><a href="#">Company information</a></div>
+            <div class="btn-filtr active"><a href="#">Settings</a></div>
+          </div>
+        </div>
+        <div class="profile-content">
+          <div class="profile-title">
+            <h1 class="">Settings</h1>
+          </div>
+          <div class="cabinet-setting-container">
+            <div class="text">You can change your picture, set a new password, set a signature block to chat with thermevo.de at this page.</div>
+            <div class="message-error">
+              <div class="close"></div>
+              Unfortunately, you can not change company details and confirm Annual quantities. <a href="#">Homer Simpson</a> already has such permissions. But you can buy products!
+            </div>
+            <div class="query_wrap">
+              <div class="query">
+                <span>How to change your right</span>
+              </div>
+              <div class="reply" style="display: none;">
+                <p><a href="#" class="red-text">Mehr Informationen darüber</a></p>
+                <p>Der für Thermix® TX.N® plus Abstandhalter verwendete Kunststoff hat eine 700-fach geringere Wärmeleitfähigkeit als Aluminium und ist die Basis des Abstandhalters. Er ist mit dünnem Edelstahl ummantelt, der eine über 10-fach geringere Wärmeleitfähigkeit als Aluminium hat.</p>
+                <iframe src="https://player.vimeo.com/video/137260178?badge=0" width="250" height="200"></iframe>
+                <div class="white-btn hide-btn">Hide</div>
+              </div>
+            </div>
+            <form id="change-password-form" action="/cabinet3_1.html">
+              <h2>Change your password</h2>
+              <div class="form-item no-error">
+                <label for="input1">Enter your current password</label>
+                <input type="password" id="input1">
+              </div>
+              <div class="form-item no-error">
+                <label for="input2">Enter a new password</label>
+                <input type="password" id="input2">
+              </div>
+              <div class="form-item error">
+                <label for="input3">Confirm a new password</label>
+                <input type="password" id="input3">
+              </div>
+              <div class="form-info">
+                Password should contain at least 8 characters, including uppercase, lowercase letters and figures.
+                <a href="#">Read more</a>
+              </div>
+              <div class="form-actions">
+                <input type="submit" value="Save">
+                <div class="submit-arrow"></div>
+              </div>
+            </form>
+            <form id="signature-settings-form" action="/cabinet3_1.html">
+              <h2>Signature settings in Blog</h2>
+              <div class="form-item">
+                <label for="input4">First name</label>
+                <input type="text" id="input4" value="Svetlana">
+                <input type="checkbox" id="ckeckbox1" checked>
+                <label class="checkboxes-label" for="ckeckbox1"></label>
+              </div>
+              <div class="form-item">
+                <label for="input5">Surname</label>
+                <input type="text" id="input5" value="Gredzheva">
+                <input type="checkbox" id="ckeckbox2" checked>
+                <label class="checkboxes-label" for="ckeckbox2"></label>
+              </div>
+              <div class="form-item">
+                <label for="input6">Company</label>
+                <input type="text" id="input6" value="Aditim">
+                <input type="checkbox" id="ckeckbox3" checked>
+                <label class="checkboxes-label" for="ckeckbox3"></label>
+              </div>
+              <div class="form-item">
+                <label for="input7">SIGNATURE SAMPLE</label>
+                <input class="gray" type="text" id="input7" value="Svetlana Gredzheva, Aditim">
+              </div>
+              <div class="form-actions">
+                <input type="submit" value="Save">
+                <div class="submit-arrow"></div>
+              </div>
+            </form>
+            <form id="notification-settings-form" action="/cabinet3_1.html">
+              <h2>Notification settings</h2>
+              <input type="checkbox" id="checkbox4"><label for="checkbox4">Receive notices of comments about my article</label><br>
+              <input type="checkbox" id="checkbox5"><label for="checkbox5">Receive notices of new comments about the artcle which I have commented</label><br>
+              <input type="checkbox" id="checkbox6"><label for="checkbox6">Receive notices of new posts in Blog</label><br>
+              <div class="form-actions">
+                <input type="submit" value="Save">
+                <div class="submit-arrow"></div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
