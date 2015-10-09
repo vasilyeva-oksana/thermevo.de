@@ -634,7 +634,17 @@
           font-weight: bold;
         }
       }
+      .param-first {
+        padding-top: 15px;
+      }
   }
+  }
+  &.list-orders {
+    .my-articles-table {
+      th {
+        text-align: center;
+      }
+    }
   }
 }
 #profile-edit-form {
@@ -1121,6 +1131,14 @@
         @media screen and (max-width: 959px) {
           width: 108px;
         }
+      }
+      &.td20 {
+        text-align: center;
+        width: 20%;
+        @media screen and (max-width: 959px) {
+          width: 108px;
+        }
+        padding: 30px 20px;
       }
       &.date {
         width: 110px;
