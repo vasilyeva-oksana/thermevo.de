@@ -6,7 +6,8 @@
     p a{
       color: #e62e4c;
       &:hover{
-        text-decoration: none;
+        //text-decoration: none;
+        color: #ff667f;
       }
     }
   }
@@ -274,6 +275,9 @@
     line-height: 38px;
     font-size: 13px;
     margin-right: 20px;
+    &:hover {
+      background-color: #ff667f;
+    }
   }
 
   .get_link {
@@ -288,6 +292,9 @@
     line-height: 36px;
     font-size: 13px;
     margin-right: 20px;
+    &:hover {
+      background-color: #d3dae1;
+    }
 
     @media screen and (max-width: $breakpoints640 - 1) {
       display: block;

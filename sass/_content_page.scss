@@ -22,6 +22,9 @@
     a {
       color: $red_text_color;
       text-decoration: underline;
+      &:hover {
+        color: #ff667f;
+      }
     }
     p {
       margin: 20px 0;

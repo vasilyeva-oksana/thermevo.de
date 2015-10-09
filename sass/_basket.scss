@@ -424,6 +424,9 @@ START basket2
         font-size: 11px;
         margin-top: 10px;
       }
+      &:hover {
+        color: #ff667f;
+      }
     }
     .confirmation_text {
       font-size: 17px;
@@ -542,9 +545,18 @@ $border_arow_select_prev: #ffffff;
           border-bottom: 1px dashed #015995;
           line-height: 35px;
         }
+        &:hover {
+          color: #e62e4c;
+          span {
+            border-bottom: 1px dashed #e62e4c;
+          }
+        }
       }
       .red-text {
         color: #e62e4c;
+        &:hover {
+          color: #ff667f;
+        }
       }
       .reply{
         display: none;

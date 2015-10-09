@@ -131,6 +131,19 @@
       return false;
     });
 
+    /*show comment*/
+    $(".comment-reply").not(".active").find(".comment-reply-content").css("display", "none");
+    $(".comment-reply .comment-reply-link").click(function(){
+      $(this).parent().addClass("active");
+      $(this).parent().find(".comment-reply-content").slideToggle("slow", function(){ });
+      return false;
+    });
+
+    $(".add_new_comment_link").click(function(){
+      $(this).slideToggle("slow", function(){ $(this).parent().find(".comment-reply-content").slideToggle("slow", function(){ }); });
+      return false;
+    });
+
     /*show filtr product*/
     $(".red-btn-link.show-filtr-product").click(function(){
      //$("#iqub-container .section .page-product .product-info .right").show();

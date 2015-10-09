@@ -30,7 +30,7 @@
     a{
       color: #015995;
       &:hover{
-        color: #015995;
+        color: #e62e4c;
         text-decoration: underline;
       }
     }
@@ -112,6 +112,76 @@
         }
       }
     }
+    .add_new_comment {
+      .comment-reply.active {
+        .comment-reply-content {
+          @media screen and (max-width: $breakpoints1280 - 1px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .comment-reply {
+      .comment-reply-content {
+        display: none;
+      }
+      &.active {
+        .comment-reply-content {
+          display: block;
+        }
+      }
+      .comment-reply-link {
+        color: #005c99;
+        font-size: 13px;
+        border-bottom: 1px dashed #015995;
+        line-height: 35px;
+        cursor: pointer;
+      }
+      .comment-reply-title {
+        color: #5d6978;
+        font-size: 13px;
+        line-height: 35px;
+      }
+      form {
+        textarea {
+          border: 1px solid #161d26;
+          width: 100%;
+          resize: none;
+          height: 100px;
+        }
+        input[type="submit"] {
+          color: white;
+          background: #e62e4c;
+          height: 60px;
+          border: 0px;
+          margin-top: 10px;
+          font-size: 17px;
+          padding: 0px 35px;
+          margin-bottom: 30px;
+          @media screen and (max-width: $breakpoints960 - 1px) {
+            line-height: 40px;
+          }
+        }
+      }
+    }
+    .add_new_comment_link {
+      color: white;
+      background: #e62e4c;
+      line-height: 60px;
+      border: 0px;
+      margin-top: 10px;
+      font-size: 17px;
+      padding: 0px 35px;
+      margin-bottom: 30px;
+      display: none;
+      margin-top: 20px;
+      @media screen and (max-width: $breakpoints1280 - 1px) {
+        display: inline-block;
+      }
+      @media screen and (max-width: $breakpoints960 - 1px) {
+        line-height: 40px;
+      }
+    }
     .blog_list{
       .blog_subscribe{
         input[type=submit]{
@@ -157,6 +227,9 @@
           }
           a{
             color: #ffffff;
+          }
+          &:hover {
+            background-color: #ff4060;
           }
         }
         .vote_up, .vote_down{
@@ -289,6 +362,9 @@
     a {
       color: #e62e4c;
       text-decoration: underline;
+      &:hover {
+        color: #ff667f;
+      }
     }
   }
 
@@ -322,13 +398,32 @@
     background: #015995;
     content: "\f0e1";
   }
+  &:hover {
+    &.linkedin:before{
+      background: #007acc;
+    }
+  }
   &.google-plus:before{
     background: #e62e4c;
     content: "\f0d5";
   }
+  &:hover {
+    &.google-plus:before{
+      background: #ff4060;
+    }
+  }
   &.facebook:before{
     background: #3b5998;
     content: "\f09a";
+  }
+  &:hover {
+    &.facebook:before{
+      background: #2451b3;
+    }
+  }
+  &.twitter:before{
+    background: #16a8d9;
+    content: "\f099";
   }
   &.twitter:before{
     background: #16a8d9;
@@ -337,5 +432,11 @@
   &.xing:before{
     background: #015c5d;
     content: "\f168";
+  }
+  &:hover {
+    &.xing:before{
+      background: #037b7c;
+      content: "\f168";
+    }
   }
 }

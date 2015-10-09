@@ -90,6 +90,9 @@
       @media screen and (max-width: $breakpoints640 - 1) {
         margin-top: 20px;
       }
+      &:hover {
+        background: #ff4060;
+      }
     }
     p {
       padding: 20px 0px;

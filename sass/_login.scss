@@ -18,6 +18,9 @@
     @media screen and (max-width: 959px) {
       font-size: 11px;
     }
+    &:hover {
+      color: #ff667f;
+    }
   }
   .login-content {
     @include clearfix();
@@ -37,6 +40,9 @@
       text-decoration: underline;
       @media screen and (max-width: 959px) {
         font-size: 11px;
+      }
+      &:hover {
+        color: #ff667f;
       }
     }
   }
@@ -213,13 +219,14 @@
       display: inline-block;
       margin-right: 15px;
       vertical-align: middle;
+      line-height: 40px;
       &.social1 {
         @include background(image-url("login_social1.jpg"));
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: cover;
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
       }
       &.social2 {
         @include background(image-url("login_social2.jpg"));
@@ -238,12 +245,18 @@
         width: 40px;
       }
       &.social4 {
-        @include background(image-url("login_social4.jpg"));
+        @include background(image-url("gmx_ico.jpg"));
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: cover;
         height: 40px;
         width: 40px;
+        &:hover {
+          @include background(image-url("gmx_ico_hover.jpg"));
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: cover;
+        }
       }
     }
   }

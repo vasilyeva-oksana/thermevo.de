@@ -258,6 +258,9 @@
         }
         a {
           color: $red_text_color;
+          &:hover {
+            color: #ff667f;
+          }
         }
         .date {
           color: #5d6978;
@@ -423,6 +426,9 @@
     a {
       color: $red_text_color;
       text-decoration: underline;
+      &:hover {
+        color: #ff667f;
+      }
     }
     .close {
       @include background-image(image-url("message_error_close.png"));
@@ -466,6 +472,9 @@
         @media screen and (max-width: 959px) {
           font-size: 11px;
         }
+        &:hover {
+          color: #e62e4c;
+        }
       }
     }
     .b {
@@ -486,6 +495,9 @@
       @media screen and (max-width: 959px) {
         font-size: 11px;
         margin-top: 15px;
+      }
+      &:hover {
+        color: #ff667f;
       }
     }
   }
@@ -697,6 +709,8 @@
           height: 60px;
           margin-right: 13px;
           width: 60px;
+          font-size: 30px;
+          line-height: 60px;
           &:nth-child(4n) {
             margin-right: 0;
           }
@@ -713,8 +727,12 @@
             background-size: cover;
           }
           &.social4 {
-            @include background-image(image-url("social4.jpg"));
+            @include background-image(image-url("gmx_ico.jpg"));
             background-size: cover;
+            &:hover {
+              @include background-image(image-url("gmx_ico_hover.jpg"));
+              background-size: cover;
+            }
           }
         }
       }
@@ -755,6 +773,9 @@
         a {
           color: $red_text_color;
           text-decoration: underline;
+          &:hover {
+            color: #ff667f;
+          }
         }
       }
     }
@@ -1059,7 +1080,7 @@
     color: #015995;
     text-decoration: none;
     &:hover {
-      color: #015995;
+      color: #e62e4c;
     }
   }
   tr {
@@ -1373,7 +1394,7 @@
         font-size: 11px;
       }
       &:hover {
-        color: $red_text_color;
+        color:#ff667f;
       }
     }
   }
@@ -1478,6 +1499,9 @@
       @media screen and (max-width: 959px) {
         font-size: 15px;
       }
+      &:hover {
+        background-color: #ff4060;
+      }
     }
     input[type=file] {
       display: none;
@@ -1511,6 +1535,9 @@
       @media screen and (max-width: 959px) {
         font-size: 15px;
       }
+      &:hover {
+        background-color: #d3dae1;
+      }
     }
   }
   .add-slider-actions {
@@ -1534,6 +1561,9 @@
       vertical-align: top;
       @media screen and (max-width: 959px) {
         font-size: 15px;
+      }
+      &:hover {
+        background-color: #d3dae1;
       }
     }
     .sent {
@@ -1662,7 +1692,7 @@
       color: $red_text_color;
       text-decoration: underline;
       &:hover {
-        color: $red_text_color;
+        color: #ff667f;
       }
     }
   }
@@ -1906,7 +1936,7 @@
       }
       &:hover,
       &.active {
-        color: #161d26;
+        color: #ff667f;
         font-size: 17px;
         text-decoration: none;
         @media screen and (max-width: $breakpoints960 - 1) {
@@ -2033,9 +2063,15 @@
       @media screen and (max-width: 959px) {
         font-size: 20px;
       }
+      &:hover {
+        color: #ff667f;
+      }
     }
   }
 }
 a.red-text{
-  color:#e62e4c
+  color:#e62e4c;
+  &:hover {
+    color: #ff667f;
+  }
 }

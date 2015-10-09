@@ -178,6 +178,9 @@
         @media screen and (max-width: 959px) {
           font-size: 15px;
         }
+        &:hover {
+          color: #ff667f;
+        }
         &:before {
           @include background-image(image-url("offices_sprite.png"));
           background-position: 0 -29px;

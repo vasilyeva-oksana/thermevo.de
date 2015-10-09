@@ -60,6 +60,9 @@
       @media screen and (max-width: $breakpoints960 - 1) {
         margin-bottom: 14px;
       }
+      &:hover {
+        background-color: #d3dae1;
+      }
     }
   }
 
@@ -140,6 +143,9 @@
     //  text-decoration: none;
     //
     //}
+    &:hover {
+      color: #ff667f;
+    }
   }
   .separator{
     padding: 0 10px;
@@ -156,6 +162,12 @@
     span{
       border-bottom: 1px dashed #015995;
       line-height: 35px;
+    }
+    &:hover {
+      color: #e62e4c;
+      span {
+        border-bottom: 1px dashed #e62e4c;
+      }
     }
   }
   .reply{
@@ -281,11 +293,10 @@
   a.red-text,.red-text{
     color: $red_text_color;
     text-decoration: underline;
-    &.hover{
-      color: $red_text_color;
+    &:hover{
+      color:#ff667f;
     }
   }
-
   .product-info{
     display: inline-block; /* non-flexbox browsers */
     @include display-flex(flex);

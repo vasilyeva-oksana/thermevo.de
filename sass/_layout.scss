@@ -157,6 +157,7 @@ a:hover, a:focus{
   }
   &:hover {
     color: #fff;
+    background-color: #ff4060;
     text-decoration: none;
   }
 }
@@ -183,6 +184,7 @@ a:hover, a:focus{
   }
   &:hover {
     color: #fff;
+    background-color: #0070bb;
     text-decoration: none;
   }
 }
@@ -872,7 +874,7 @@ input[type=radio]{
     top: 3px;
     @include background(image-url("radio_checkbox.png") -27px center no-repeat);
   }
-  &:checked + label::before{
+  &:checked + label::before,& + label:hover::before{
     background-position: -3px center;
   }
 }
@@ -881,7 +883,7 @@ input[type=checkbox]{
   & + label:before{
     background-position: -51px center;
   }
-  &:checked + label::before{
+  &:checked + label::before,& + label:hover::before{
     background-position: -75px center;
   }
 }
@@ -2772,6 +2774,9 @@ START basket
         color: white;
         background: #e62e4c;
         border: 0px;
+        &:hover {
+          background: #ff4060;
+        }
       }
     }
   }
