@@ -331,6 +331,24 @@
       $('.popup-bg').fadeOut();
     });
 
+    $('.cabinet-post-cart .chose_file').on('click',function(){
+      $('.cabinet-post-cart .attached_files input[type=file]').not('.cabinet-post-cart .attached_files.uploaded input[type=file]').click();
+      return false;
+    });
+    $(document).on('click', '.cabinet-post-cart .uploaded_file_close', function(){
+      $(this).closest('.attached_files').remove();
+      return false;
+    });
+    $(document).on('change', '.cabinet-post-cart .attached_files input', function() {
+      $(this).closest('.attached_files').addClass('uploaded');
+      $(this).closest('.attached_files').find('.uploaded_file').html($(this).val());
+      $('.cabinet-post-cart .attached_files_wrap').append('<div class="attached_files"><div class="uploaded_file"></div><div class="uploaded_file_close"></div><input type="file" name="uploaded_file[]"></div>');
+    });
+    $('.new_message').click(function(){
+      $('.new_message').css('display','none');
+      $('.upload_files_form').css('display','block');
+      return false;
+    });
   });
 
   $(window).resize(function() {

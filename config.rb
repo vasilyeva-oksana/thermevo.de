@@ -5,7 +5,7 @@
 
 # Change this to :production when ready to deploy the CSS to the live server.
 environment = :development
-#environment = :production
+environment = :production
 
 # disabled for drupal.org contib, change this for debugging
 line_comments = false
