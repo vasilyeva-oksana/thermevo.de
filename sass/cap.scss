@@ -1,0 +1,124 @@
+@import "vars";
+html{
+  position: relative;
+}
+html, body{
+  min-height: 100%;
+}
+#cap{
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  display: inline-block;
+  @include background(image-url("cap/cap_bg.png") no-repeat);
+  background-size: cover;
+
+  color: #161d26;
+  font-family: $main_font;
+  font-size: 15px;
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .logo{
+    position: absolute;
+    display: inline-block;
+    left: calc( 50% - 295px / 2  );
+    top: 47px;
+  }
+  .wrap_text{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 630px;
+    text-align: center;
+    @media screen and (max-width: $breakpoints640 - 1) {
+      width: 280px;
+    }
+    .big_text{
+      font-size: 50px;
+      font-family: $main_font;
+    }
+    .mail{
+      padding-top: 45px;
+      text-align: center;
+      padding-bottom: 100px;
+      form{
+        display: block;
+        height: 60px;
+        width: 360px;
+        margin: 0 auto;
+        @media screen and (max-width: $breakpoints640 - 1) {
+          width: 280px;
+        }
+      }
+
+
+    }
+  }
+  input[type=text],input[type=email]{
+    font-size: 15px;
+    //height: 60px;
+    height: 60px;
+    width: 275px;
+    border: none;
+    padding-left: 20px;
+    float: left;
+    @media screen and (max-width: $breakpoints640 - 1) {
+      width: 195px;
+    }
+  }
+  input[type=submit],input[type=button]{
+    background: #e62e4c;
+    font-size: 24px;
+    height: 62px;
+    width: 62px;
+    color: #ffffff;
+    border: none;
+    //font-size: 25px;
+    float: left;
+    cursor: pointer;
+  }
+  .popup_cap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(255, 255, 255, 0.75);
+    .center{
+      width: 290px;
+      height: 150px;
+      margin: 0 auto;
+      position: relative;
+      top: calc(50% - 75px);
+      text-align: center;
+      .text{
+        font-size: 50px;
+        font-weight: bold;
+        color: #005c99;
+        padding-bottom: 30px;
+      }
+      input[type=button]{
+        float: inherit;
+      }
+    }
+  }
+  .cooperation{
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  .blue{
+    color: #005c99;
+  }
+  .red{
+    color: #e62e4c;
+  }
+}
+.reset{
+  clear: both;
+}

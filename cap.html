@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thermevo</title>
+  <meta name="viewport" content="width=device-width">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/compiled/cap.css" media="all" />
+</head>
+<body id="cap">
+<div>
+  <img src="images/logo.png" height="46" width="295" alt="logo" class="logo">
+  <div class="wrap_text">
+    <div class="big_text blue">
+      The future is built right <br>here and <span class="red">right now!</span>
+    </div>
+    <div>
+      <p>Thermevo is producing a revolutionary web-platform on thermal insulation and energy saving. Very soon you will be able to experience the advantages of an innovative and client oriented approach to thermal physics.</p>
+      <br>
+      <br>
+      <br>
+      <span class="uppercase">Leave us your email and be the first to try it out:</span>
+    </div>
+    <div class="mail">
+      <form action="/" class="subscription">
+        <input type="email" required="required" placeholder="you@yourmail.com"><input type="submit" value="✓">
+        <div class="reset"></div>
+      </form>
+    </div>
+  </div>
+  <div class="cooperation">
+    © 2015 ThermEVO
+  </div>
+  <div class="popup_cap">
+    <div class="center">
+      <div class="text">Thank you!</div>
+      <input type="button" value="✓">
+    </div>
+  </div>
+  <script>
+    jQuery(".popup_cap input[type=button]").click(function(){
+      jQuery(".popup_cap").fadeOut("slow");
+    });
+
+    jQuery(".subscription").submit(function(){
+      //There will be sending data to something like jQuery.post("dd.php", {}, function(){ jQuery(".popup_cap").fadeIn("slow"); });
+      jQuery(".popup_cap").fadeIn("slow");
+      return false;
+    });
+  </script>
+</div>
+</body>
+</html>
