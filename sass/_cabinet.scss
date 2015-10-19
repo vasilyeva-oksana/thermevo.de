@@ -1154,6 +1154,7 @@
       @media screen and (max-width: 959px) {
         padding: 20px 20px;
       }
+      width: 16.666%;
       &.likes,
       &.dislikes,
       &.comments
@@ -1167,21 +1168,21 @@
         }
       }
       &.order_id {
-        padding: 0 3px;
+        //padding: 0 3px;
         text-align: left;
         //width: 120px;
-        padding-left: 15px;
+        //padding-left: 15px;
         @media screen and (max-width: 959px) {
           //width: 108px;
         }
       }
       &.order_date {
-        padding: 0 3px;
+        //padding: 0 3px;
         text-align: left;
-        width: 120px;
-        padding-left: 15px;
+        //width: 120px;
+        //padding-left: 15px;
         @media screen and (max-width: 959px) {
-          width: 108px;
+          //width: 108px;
         }
       }
       &.td20 {
