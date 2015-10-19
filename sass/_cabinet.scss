@@ -1946,6 +1946,15 @@
     }
   }
 }
+.fz13{
+  font-size: 13px;
+  & a{
+    font-size: 13px;
+  }
+}
+.my-articles-table tr td.name.fz13 a{
+  font-size: 13px;
+}
 .list-adresses {
   display: inline-block;
   float: right;
