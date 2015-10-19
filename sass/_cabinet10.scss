@@ -198,6 +198,12 @@
         font-size: 17px;
         color: #161d26;
         font-family: "Ubuntu", helvetica, Arial, sans-serif;
+        & > div{
+          float: left;
+        }
+        & > div:first-child{
+          padding-bottom: 10px;
+        }
         @media screen and (max-width: $breakpoints640 - 1) {
           position: relative;
           display: block;
@@ -215,9 +221,16 @@
             font-size: 11px;
           }
         }
+        .quantity > span{
+          width: 110px;
+        }
+        .unit_price > span{
+          width: 110px;
+
+        }
         .quantity,.unit_price,.taxes {
           display: table-cell;
-          width: 33.33%;
+          width: 50%;
           text-align: left;
           @media screen and (max-width: $breakpoints640 - 1) {
             display: block;
