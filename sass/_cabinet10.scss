@@ -15,6 +15,11 @@
   @media screen and (max-width: 639px) {
     margin-bottom: 20px;
   }
+  &.cabinet11 {
+    .h1 {
+      margin-top: 0px;
+    }
+  }
   .profile-content {
     font-size: 17px;
     line-height: 30px;
@@ -361,6 +366,9 @@
     @media screen and (max-width: 639px) {
       margin-top: 20px;
     }
+    label {
+      margin: 0px;
+    }
   }
   .bordered {
     padding: 20px;
@@ -426,6 +434,9 @@
     @media screen and (max-width: 959px) {
       margin-top: 40px;
     }
+  }
+  .paddingtop25 {
+    padding-top: 25px;
   }
   .form-actions input[type=submit] {
     -moz-border-radius: 0;
@@ -765,6 +776,137 @@
       }
       &.uploaded {
         display: block;
+      }
+    }
+  }
+  .basket_steps{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .breake {
+      display: none;
+      &:nth-child(6){
+        @media screen and (max-width: $breakpoints1280 - 1) {
+          display: block;
+        }
+        @media screen and (max-width: $breakpoints640 - 1) {
+          display: none;
+        }
+      }
+      &:nth-child(4){
+        @media screen and (max-width: $breakpoints640 - 1) {
+          display: block;
+        }
+      }
+      &:nth-child(8){
+        @media screen and (max-width: $breakpoints640 - 1) {
+          display: block;
+        }
+      }
+    }
+    .basket_step{
+      @media screen and (max-width: $breakpoints640 - 1) {
+        display: inline-block;
+      }
+      position: relative;
+      background: $backgraund_arow_noactiv;
+      border: 1px solid $border_arow_noactiv;
+      padding-left: 50px;
+      padding-right: 20px;
+      &.active{
+        a{
+          color:#fff;
+        }
+        background: $backgraund_arow_activ;
+        &:after{
+          border-left-color: $backgraund_arow_activ;
+        }
+        &:before{
+          border-left-color: $border_arow_activ;
+        }
+      }
+      &.selectd_prev{
+        a{
+          color:#fff;
+        }
+        background: $backgraund_arow_select_prev;
+        &:after{
+          border-left-color: $backgraund_arow_select_prev;
+        }
+        &:before{
+          border-left-color: $border_arow_select_prev;
+        }
+      }
+      &.selected{
+
+      }
+      &:nth-child(1){
+        padding-left: 20px;
+        z-index: 5;
+      }
+      &:nth-child(3){
+        z-index: 4;
+        margin-left: -6px;
+      }
+      &:nth-child(5) {
+        z-index: 3;
+        margin-left: -12px;
+        @media screen and (max-width: $breakpoints640 - 1) {
+          margin-left: 0px;
+          margin-top: 20px;
+          padding-left: 20px;
+        }
+      }
+      &:nth-child(7){
+        z-index: 2;
+        margin-left: -12px;
+        @media screen and (max-width: $breakpoints1280 - 1) {
+          margin-left: 0px;
+          margin-top: 20px;
+          padding-left: 20px;
+        }
+        @media screen and (max-width: $breakpoints640 - 1) {
+          margin-left: -12px;
+          margin-top: 0px;
+          padding-left: 50px;
+        }
+      }
+      &:nth-child(9) {
+        z-index: 1;
+        margin-left: -12px;
+        @media screen and (max-width: $breakpoints640 - 1) {
+          margin-left: 0px;
+          margin-top: 20px;
+          padding-left: 20px;
+        }
+      }
+      a{
+
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &:hover{
+      }
+      &:after{
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(34, 151, 230, 0);
+        border-left-color: $backgraund_arow_noactiv;
+        border-width: 30px;
+        margin-top: -30px;
+      }
+      &:before{
+        @extend .basket_step:after;
+        border-color: rgba(255, 255, 255, 0);
+        border-left-color: $border_arow_noactiv;
+        border-width: 31px;
+        margin-top: -31px;
       }
     }
   }
