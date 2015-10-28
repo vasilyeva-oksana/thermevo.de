@@ -1125,19 +1125,23 @@
         font-size: 11px;
       }
       &.likes {
+        text-align: center;
         div {
           @include background-image(image-url("like_dislike_comment.png"));
           background-position: 0 0;
           height: 14px;
           width: 16px;
+          display: inline-block;
         }
       }
       &.dislikes {
+        text-align: center;
         div {
           @include background-image(image-url("like_dislike_comment.png"));
           background-position: 0 -14px;
           height: 14px;
           width: 16px;
+          display: inline-block;
         }
       }
       &.comments {
