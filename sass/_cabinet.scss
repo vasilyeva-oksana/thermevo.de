@@ -1197,6 +1197,14 @@
         }
         padding: 30px 20px;
       }
+      &.td25 {
+        text-align: center;
+        width: 25%;
+        @media screen and (max-width: 959px) {
+          width: 108px;
+        }
+        padding: 30px 20px;
+      }
       &.date {
         width: 110px;
       }
