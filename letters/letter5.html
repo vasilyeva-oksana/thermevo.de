@@ -5,29 +5,28 @@
 </head>
 <body>
 <div class="letter">
-  <img id="letter_logo" src="images/letter_logo.png"/>
+  <img id="letter_logo" src="../images/letter_logo.png"/>
   <div class="letter_content">
     <table>
       <tr>
         <td>
-          <span class="h1">Dear < username >,
-            Thank you for registering
-            at thermevo.de</span>
+          <span class="h1">Dear < name surname ></span>
         </td>
       </tr>
       <tr>
-        <td>
-          Click the button below to activate your Thermevo account
-          <br>
-          <a class="button_red" href="#">Activate account</a>
-          <br>
-          Once you activate your account, you will be notified with your new login and password so you can stay in touch with Thermevo!
+        <td class="text_left">
+          <p>We are delighted that <a href="#">COMPANY NAME</a> has decided to join forces with Thermevo GBH. </p>
+          <p>This letter confirms the binding agreements between Thermevo GBH (or "we") and <a href="#">COMPANY NAME</a>  (or "you") in consideration of the payments, fees and services.  </p>
+          <span class="text_centr"><a class="button_red" href="#">To read agreement</a></span>
+          <p>Hoping to have a long and successful business relationship with you.</p>
+          <p class="signature">Yours Sincerely,<br>
+          Thermevo Team</p>
         </td>
       </tr>
     </table>
     <div class="align_right follow_us">
-      <a href="#"><img src="images/in_letter.png"/></a>
-      <a href="#"><img src="images/twitter_letter.png"/></a>
+      <a href="#"><img src="../images/in_letter.png"/></a>
+      <a href="#"><img src="../images/twitter_letter.png"/></a>
       <span>Follow us </span>
       <div style="clear:both"></div>
     </div>
@@ -43,7 +42,7 @@
       </td>
     </tr>
   </table>
-  <img class="letter_bottom_logo" src="images/letter_bottom_logo.png"/>
+  <img class="letter_bottom_logo" src="../images/letter_bottom_logo.png"/>
 </div>
 <style>
   .letter {
@@ -70,7 +69,8 @@
   .button_red {
     box-sizing: border-box;
     background-color: #e62e4c;
-    color: #fff;
+    color: #fff!important;
+	text-transform:uppercase;
     line-height: 47px;
     padding: 0px 16px;
     text-transform: uppercase;
@@ -121,6 +121,29 @@
   }
   .letter_bottom_logo {
     padding-bottom: 25px;
+  }
+  .text_left {
+    text-align: left;
+  }
+  .letter p {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px;
+  }
+  .letter a {
+    color: #345d96;
+  }
+  .letter .signature{
+	  font-family:Verdana;
+	  font-size:13px;
+	  font-style:italic;
+  }
+  .letter .italic{
+	  font-style:italic;
+  }
+  .text_centr {
+    text-align: center;
+	display:block;
   }
 </style>
 </body>
