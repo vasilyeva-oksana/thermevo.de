@@ -1,0 +1,86 @@
+.upload {
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      font-size: 20px;
+    }
+  }
+  ul {
+    padding-left: 0px;
+  }
+  ul li {
+    list-style: none;
+    background-image: image-url('bullet-red-line.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 22px;
+    padding: 0px 0px;
+    padding-left: 40px;
+    font-size: 17px;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      font-size: 15px;
+    }
+  }
+  .upload_button {
+    padding-top: 40px;
+  }
+}
+
+.comming_soon {
+  .comming_soon_wrap {
+    float: left;
+    @media screen and (max-width: $breakpoints640 - 1) {
+      float: none;
+    }
+  }
+  .content {
+    .title {
+      padding-top: 60px;
+      padding-left: 266px;
+      @media screen and (max-width: $breakpoints1280 - 1) {
+        padding-top: 35px;
+      }
+      @media screen and (max-width: $breakpoints640 - 1) {
+        padding-left: 0px;
+      }
+    }
+  }
+
+  .comming_form {
+    clear: both;
+    padding-top: 80px;
+    @media screen and (max-width: $breakpoints960 - 1) {
+      padding-top: 40px;
+    }
+    @media screen and (max-width: $breakpoints640 - 1) {
+      padding-top: 20px;
+    }
+    label {
+      font-size: 15px;
+      color: #161d26;
+      display: block;
+      margin-bottom: 25px;
+    }
+    input[type="text"] {
+      width: 300px;
+      line-height: 60px;
+      border: 1px solid #d3dae1;
+      box-sizing: border-box;
+      padding-left: 20px;
+      font-size: 17px;
+      float: left;
+      height: 60px;
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: 260px;
+      }
+    }
+    input[type="submit"] {
+      background: image-url('comming_soon_submit.jpg');
+      width:60px;
+      height: 60px;
+      background-size: cover;
+      border: 0px;
+    }
+  }
+}
