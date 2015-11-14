@@ -19,6 +19,15 @@
     return rv;
   }
 
+  $(window).load(function() {
+    var swiper2 = new Swiper('#we-block .swiper-container', {
+      slidesPerView: 5,
+      loop: true,
+      nextButton: '#we-block .swiper-button-next',
+      prevButton: '#we-block .swiper-button-prev',
+    });
+  });
+
   $(document).ready(function(){
     var form_slide_id = 1;
     var form_slide = "";
@@ -157,12 +166,7 @@
       nextButton: '#clients-slider .swiper-button-next',
       prevButton: '#clients-slider .swiper-button-prev',
     });
-    var swiper2 = new Swiper('#we-block .swiper-container', {
-      slidesPerView: 'auto',
-      loop: true,
-      nextButton: '#we-block .swiper-button-next',
-      prevButton: '#we-block .swiper-button-prev',
-    });
+
     var languageImg = $('.language-btn .language-menu a.active').css('background-image');
     $('.language-btn').css('background-image', languageImg);
     $('.language-btn').on('click', function () {

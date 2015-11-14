@@ -544,6 +544,9 @@ a:hover, a:focus{
     width: 100%;
     overflow: hidden;
   }
+  a:hover {
+    color:#e62e4c;
+  }
   // video {
   //   position: absolute;
   //   top: 0;
@@ -639,7 +642,7 @@ a:hover, a:focus{
     color: #fff;
     float: left;
     height: 400px;
-    padding: 185px 20px 0 20px;
+    padding: 185px 25px 0 25px;
     position: relative;
     text-align: center;
     @media screen and (min-width: $breakpoints960) {
@@ -1438,6 +1441,7 @@ END Styling scrollbar
           @include background(image-url("block_image1.png"));
           background-repeat: no-repeat;
           background-position: left center;
+          margin-bottom: 60px;
         }
       }
       &:nth-child(2) {
@@ -1445,6 +1449,7 @@ END Styling scrollbar
           @include background(image-url("block_image2.png"));
           background-repeat: no-repeat;
           background-position: left center;
+          margin-bottom: 60px;
         }
       }
       &:nth-child(3) {
@@ -1452,6 +1457,7 @@ END Styling scrollbar
           @include background(image-url("block_image3.png"));
           background-repeat: no-repeat;
           background-position: left center;
+          margin-bottom: 60px;
         }
       }
     }
@@ -1964,6 +1970,7 @@ END Styling scrollbar
     padding-top: 100px;
   }
   .top {
+    margin-top: 50px;
     border-bottom: 1px solid #fff;
     .title {
       font-weight: bold;
