@@ -2031,6 +2031,7 @@ END Styling scrollbar
           float: left;
           height: 100px;
           width: 115px;
+          margin-bottom: 50px;
         }
         @media screen and (min-width: $breakpoints640) and (max-width: 959px) {
           display: inline-block;
