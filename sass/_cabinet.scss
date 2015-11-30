@@ -646,6 +646,10 @@
           padding-right: 5px;
           font-weight: bold;
         }
+        img {
+          max-height: 250px;
+          width: auto;
+        }
       }
       .param-first {
         padding-top: 15px;
@@ -1200,6 +1204,18 @@
       &.td25 {
         text-align: center;
         width: 25%;
+        @media screen and (max-width: 959px) {
+          width: 108px;
+        }
+        padding: 30px 20px;
+      }
+      &.td33 {
+        text-align: center;
+        width: 33.33%;
+        img {
+          max-height: 250px;
+          width: auto;
+        }
         @media screen and (max-width: 959px) {
           width: 108px;
         }
