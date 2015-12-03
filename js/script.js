@@ -29,6 +29,16 @@
   });
 
   $(document).ready(function(){
+
+    $('#iqub-container.catalog3 .section .wrap-search .form-catalog .form-top .advanced-search-btn').click(function(){
+      $('#iqub-container.catalog3 .section .wrap-search .form-catalog .advanced-search-container').slideToggle('slow');
+      return false;
+    });
+    $('#iqub-container.catalog3 .section .wrap-search .form-catalog .advanced-search-container .advanced-close').click(function(){
+      $('#iqub-container.catalog3 .section .wrap-search .form-catalog .advanced-search-container').slideToggle('slow');
+      return false;
+    });
+
     var form_slide_id = 1;
     var form_slide = "";
 

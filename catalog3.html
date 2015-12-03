@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thermevo</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/swiper/swiper.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="css/jscrollpane/jquery.jscrollpane.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="css/compiled/style.css" media="all" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/swiper/swiper.min.js"></script>
+  <script src="js/jquery.jscrollpane.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="page">
+    <header id="header">
+      <div class="section">
+        <div class="header-top">
+          <div class="left">
+            <img src="images/logo.png" height="46" width="295" alt="logo">
+          </div>
+          <div class="right">
+           <form action="#" class="search-form">
+             <input type="text">
+             <div class="search-toggle"></div>
+           </form>
+           <div class="menu-btn-mobile"></div>
+            <a href="#" class="cart-link">Mein Quotation</a>
+            <a href="#" class="login-link">Anmelden</a>
+            <div class="language-btn">
+              <ul class="language-menu">
+                <li class="germany"><a href="#" class="active">Deutsch</a></li>
+                <li class="english"><a href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-menus-container">
+          <div id="header-menu-left">
+            <ul>
+              <li><a class="active" href="#">Instant Quote Builder</a></li>
+              <li><a href="#">ThermevoBlog</a></li>
+              <li><a href="#">Rechenservice</a></li>
+            </ul>
+          </div>
+          <div id="header-menu-right">
+            <ul>
+              <li><a href="#">Über Uns</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="iqub-container" class="catalog catalog3">
+      <div class="section">
+        <div class="filtr">
+          <div class="menu">
+            <div class="btn-filtr active"><a href="#">Polyamid Insulating Strips</a></div>
+            <div class="btn-filtr"><a href="#">АBС-Insulating Strips</a></div>
+            <div class="btn-filtr"><a href="#">Foam Profiles</a></div>
+            <div class="btn-filtr"><a href="#">H-PVC Profiles</a></div>
+          </div>
+        </div>
+        <div class="content catalog">
+          <div class="title">Polyamid Insulating Strips</div>
+          <div class="wrap-search active">
+            <form action="#" class="search-form form-catalog">
+              <div class="form-top">
+                <input placeholder="To find please enter any word, article or a part of it" type="text">
+                <input type="submit" value="Search">
+                <button class="white-btn advanced-search-btn">Advanced Search</button>
+              </div>
+              <div class="advanced-search-container">
+                <div class="advanced-top">
+                  <div class="advanced-close">Hide filter</div>
+                  <div class="advanced-question">How to choose the right product?</div>
+                </div>
+                <div class="advanced-bottom">
+                  <div class="advanced-left">
+                    <div class="advanced-title">Geometry</div>
+                    <div class="geometry-container">
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category1.png" alt=""></div>
+                        <input type="checkbox" id="geometry1">
+                        <label for="geometry1">Flat</label>
+                      </div>
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category2.png" alt=""></div>
+                        <input type="checkbox" id="geometry2">
+                        <label for="geometry2">Offset</label>
+                      </div>
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category3.png" alt=""></div>
+                        <input type="checkbox" id="geometry3">
+                        <label for="geometry3">Flag</label>
+                      </div>
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category4.png" alt=""></div>
+                        <input type="checkbox" id="geometry4">
+                        <label for="geometry4">Hollow chamber</label>
+                      </div>
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category5.png" alt=""></div>
+                        <input type="checkbox" id="geometry5">
+                        <label for="geometry5">Gasket Connection</label>
+                      </div>
+                      <div class="geometry-item">
+                        <div class="geometry-image"><img src="images/data/category6.png" alt=""></div>
+                        <input type="checkbox" id="geometry6">
+                        <label for="geometry6">Your geometry</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="advanced-right">
+                    <div class="art">
+                      <div class="l">Width, mm</div>
+                      <div class="r">
+                        <input type="checkbox" id="with-foam">
+                        <label for="with-foam">With foam</label>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <label for="id1">From</label>
+                      <input id="id1" type="text" placeholder="11">
+                    </div>
+                    <div class="form-item">
+                      <label for="id2">To</label>
+                      <input id="id2" type="text" placeholder="45" value="45">
+                    </div>
+                    <div class="form-actions">
+                      <input type="submit" value="Apply filter">
+                      <div class="submit-arrow"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="upload-drawing">
+            You can <a href="#">upload</a> your drawing and get an estimation of the cost of manufacturing your parts on-line!
+          </div>
+
+          <div class="sort-container">
+            <label for="sort1">Sort by</label>
+            <select name="sort" id="sort1">
+              <option value="1">Width Narrow to Wide</option>
+              <option value="2">Width Narrow to Wide1</option>
+              <option value="3">Width Narrow to Wide2</option>
+            </select>
+          </div>
+
+          <div class="list-products">
+            <div class="product">
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+            </div>
+            <div class="product"><!-- programmer, not by becoming enter and tab -->
+              <a href="#">
+                <span class="img"><img src="images/product.png" alt="ttt" /></span>
+                <span class="title">Polyamid Isoliersteg</span>
+                <span class="desc">24 mm, I-Typ komplizierte Geometrie</span>
+                <span class="article">Artikel 600800</span>
+              </a>
+             </div></div>
+        </div>
+      </div>
+    </div>
+    <div id="after-cabinet-container">
+      <div class="section">
+        <div class="icon-right"></div>
+        <div class="icon-left"></div>
+        <div class="text-nomobile">Falls Sie einen Fehler bemerken, mit inkorrekter Arbeit der Kundendienst zusammenstoßen oder tolle Ideen für Thermevo zu verbessen haben — bitte geben Sie uns Bescheid!</div>
+        <div class="text-mobile">Noticed an error?</div>
+      </div>
+    </div>
+    <div id="three-blocks">
+      <div class="section">
+        <div class="block">
+          <div class="t">Automatiziertes<br> Kaufsystem</div>
+          <div class="m">Es spart Eure Zeit und Geld ein</div>
+          <div class="b"><a href="#">Versuchen</a></div>
+        </div>
+        <div class="block">
+          <div class="t">Online Rechnenservice</div>
+          <div class="m">Jenes, was vorher eine Woche brauchte, jetzt nimmt nur einen halben Stunde</div>
+          <div class="b"><a href="#">Versuchen</a></div>
+        </div>
+        <div class="block">
+          <div class="t">ThermevoBlog</div>
+          <div class="m">Nötige Information<br> und Netzwerk für Fachleute</div>
+          <div class="b"><a href="#">Macht mit</a></div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="section">
+        <div class="top">
+          <img class="footer-logo" src="images/logo_footer.png" height="46" width="295" alt="logo">
+          <div class="right">
+            <div class="social-container">
+              <a href="#" class="in"></a>
+              <a href="#" class="fb"></a>
+            </div>
+            <div class="label">We in social networks</div>
+          </div>
+        </div>
+        <div class="mid">
+          <ul class="footer-menu">
+            <li>
+              <a class="active" href="#">Instant Quote Builder</a>
+              <ul>
+                <li><a href="#">Polyamid Isolierstege</a></li>
+                <li><a href="#">ABC-Isolierstege</a></li>
+                <li><a href="#">Geschäumte Profile</a></li>
+                <li><a class="active" href="#">PVC Profile</a></li>
+                <li><a class="allocated" href="#">Upload your drawing</a></li>
+                <li><a href="#">IQUB FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">ThermevoBlog</a>
+              <ul>
+                <li><a href="#">Latest publications</a></li>
+                <li><a href="#">Editor's Choice</a></li>
+                <li><a href="#">Popular articles</a></li>
+                <li><a href="#">Blog FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+              <ul>
+                <li><a class="allocated" href="#">Call soon</a></li>
+                <li><a class="allocated" href="#">Call at a convenient time</a></li>
+                <li><a class="allocated" href="#">Write to us</a></li>
+                <li class="cantact-info"><span class="location-icon"></span>Office address<br>info@thermevo.de<br>+1234567789</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Reshenservie</a>
+              <ul>
+                <li><a href="#">Learn more about the service</a></li>
+                <li><a href="#">Reshenservie FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Uber Uns</a>
+              <ul>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projekt-Regeln</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="before-bottom">
+          Wie benutzen wärmetechnische Berechnungen Online?<br> 
+          Wie arbeitet IQUB?<br>
+          Was ist ThermevoBlog?<br>
+        </div>
+        <div class="bot">
+          <div class="left">
+            <span class="copyright">© 2015 ThermEVO</span>
+            <a class="allocated" href="#">Legal Stuff</a>
+            <a class="allocated" href="#">Privacy Policy</a>
+          </div>
+          <div class="right">
+            <div class="social-share-container">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="in"></a>
+              <a href="#" class="fb"></a>
+            </div>
+            <div class="label">Like the project?</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

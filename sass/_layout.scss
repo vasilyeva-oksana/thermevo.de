@@ -2583,6 +2583,7 @@ START basket
     display: inline-block;
   }
 }
+
 /*********************/
 #iqub-container.basket {
   padding-top: 80px;
@@ -2924,4 +2925,439 @@ START basket
     }
   }
 
+}
+/********Catalog3*********/
+#iqub-container.catalog3 {
+  .section {
+
+    .filtr {
+      width: 100%;
+      .menu {
+        display: inline-block;
+        width: 100%;
+        .btn-filtr {
+          display: inline-block;
+          float: left;
+          margin: 0 40px 20px 0;
+          width: 280px;
+          a {
+            padding: 0 10px;
+            text-align: center;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &.active,&:hover,&.active:hover {
+            background: #015995;
+            border: 1px solid #fff;
+            width: 280px;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+          }
+          @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+            height: 80px;
+            margin: 0 20px 20px 0;
+            width: 215px;
+            &.active,&:hover,&.active:hover {
+              width: 215px;
+            }
+            a {
+              line-height: 80px;
+              height: 80px;
+            }
+            &:first-child {
+              a {
+                line-height: normal;
+                padding-bottom: 22px;
+                padding-top: 22px;
+              }
+            }
+          }
+          @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+            width: 135px;
+            margin: 0 20px 20px 0;
+            &.active,&:hover,&.active:hover {
+              width: 135px;
+            }
+            &:nth-child(1),
+            &:nth-child(2) {
+              a {
+                line-height: normal;
+                padding-bottom: 10px;
+                padding-top: 10px;
+              }
+            }
+          }
+          @media screen and (max-width: $breakpoints640 - 1) {
+            width: 100%;
+            margin: 0 0 20px 0;
+            &.active,&:hover,&.active:hover {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .content.catalog {
+      width: 100%;
+      @media screen and (min-width: $breakpoints1280) {
+        width: 100%;
+      }
+      >.title {
+        @media screen and (max-width: $breakpoints960 - 1) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      .sort-container {
+        display: inline-block;
+        margin: 40px 0 0 0;
+        width: 100%;
+        @media screen and (max-width: $breakpoints640 - 1) {
+          margin-top: 20px;
+        }
+        label {
+          color: #161d26;
+          display: inline-block;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0 20px 0 0;
+          @media screen and (max-width: $breakpoints960 - 1) {
+            font-size: 20px;
+          }
+        }
+        select {
+          background-color: #fff;
+          border: 1px solid #161d26;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          color: #161d26;
+          font-size: 17px;
+          height: 40px;
+        }
+      }
+      .list-products {
+        @media screen and (max-width: $breakpoints640 - 1) {
+          padding-top: 20px;
+        }
+        .product {
+          float: left;
+          width: 280px;
+          @media screen and (min-width: $breakpoints1280) {
+            &:nth-child(3n) {
+              margin-right: 40px;
+            }
+            &:nth-child(4n) {
+              margin-right: 0;
+            }
+          }
+          @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+            &:nth-child(2n) {
+              margin-right: 40px;
+            }
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+          }
+          @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+          }
+          @media screen and (max-width: $breakpoints640 - 1) {
+            float: none;
+            margin: 0 auto 20px auto;
+          }
+        }
+      }
+    }
+    .wrap-search {
+      padding-bottom: 0;
+      .form-catalog {
+        .form-top {
+          display: inline-block;
+          margin-bottom: 30px;
+          width: 100%;
+          input[type=text] {
+            display: inline-block;
+            float: left;
+            font-size: 13px;
+            width: 980px;
+            margin-right: 20px;
+          }
+          input[type=submit] {
+            background: #015995;
+            border: none;
+            color: #fff;
+            display: inline-block;
+            float: left;
+            font-size: 13px;
+            height: 40px;
+            margin-right: 20px;
+            width: 80px;
+          }
+          .advanced-search-btn {
+            color: #161d26;
+            display: inline-block;
+            font-size: 13px;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            width: 140px;
+          }
+          @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+            input[type=text] {
+              width: 660px;
+            }
+          }
+          @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+            input[type=text] {
+              width: 380px;
+            }
+            input[type=submit] {
+              margin-right: 10px;
+              width: 70px;
+            }
+            .advanced-search-btn {
+              width: 120px;
+            }
+          }
+          @media screen and (max-width: $breakpoints640 - 1) {
+            input[type=text] {
+              width: 100%;
+            }
+            input[type=submit] {
+              display: none;
+            }
+            .advanced-search-btn {
+              width: 100%;
+              margin-top: 20px;
+            }
+          }
+        }
+        .advanced-search-container {
+          border: 1px solid #d3dae1;
+          display: none;
+          line-height: normal;
+          margin-bottom: 30px;
+          padding: 20px 20px 0 20px;
+          position: relative;
+          width: 100%;
+          &:before {
+            content: '';
+            @include background(image-url("advanced_arrow.png"));
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 16px;
+            position: absolute;
+            right: 131px;
+            top: -16px;
+            width: 10px;
+          }
+          .advanced-top {
+            display: inline-block;
+            width: 100%;
+          }
+          .advanced-question {
+            color: #015995;
+            cursor: pointer;
+            border-bottom: 1px dashed #015995;
+            display: inline-block;
+            font-size: 15px;
+            float: left;
+            margin: 20px 0;
+          }
+          .advanced-close {
+            @include background(image-url("advanced_hide.png"));
+            background-repeat: no-repeat;
+            background-position: left center;
+            color: #161d26;
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            font-size: 13px;
+            margin: 20px 0;
+            padding-left: 25px;
+            @media screen and (max-width: $breakpoints640 - 1) {
+              float: left;
+            }
+          }
+        }
+        .advanced-bottom {
+          display: inline-block;
+          max-width: 920px;
+          width: 100%;
+        }
+        .advanced-left {
+          display: inline-block;
+          float: left;
+          width: 600px;
+          .advanced-title {
+            color: #161d26;
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .geometry-item {
+            display: inline-block;
+            float: left;
+            padding: 0;
+            width: 33%;
+            .geometry-image {
+              display: table-cell;
+              height: 90px;
+              padding-bottom: 15px;
+              vertical-align: bottom;
+              width: 100%;
+              img {
+                display: block;
+              }
+            }
+            label {
+              color: #161d26;
+              font-size: 15px;
+            }
+          }
+          @media screen and (max-width: $breakpoints640 - 1) {
+            .geometry-item {
+              width: 100%;
+            }
+          }
+        }
+        .advanced-right {
+          display: inline-block;
+          float: right;
+          width: 280px;
+          .art {
+            display: inline-block;
+            width: 100%;
+            .l {
+              color: #161d26;
+              display: inline-block;
+              float: left;
+              font-size: 24px;
+              font-weight: 700;
+            }
+            .r {
+              display: inline-block;
+              float: right;
+              label {
+                color: #161d26;
+                font-size: 15px;
+              }
+            }
+          }
+          .form-item {
+            display: inline-block;
+            margin: 5px 0;
+            width: 100%;
+            label {
+              display: inline-block;
+              float: left;
+              font-size: 15px;
+              line-height: 40px;
+              margin: 0;
+              width: 60px;
+            }
+            input[type=text] {
+              background: none;
+              border: 1px solid #161d26;
+              font-size: 15px;
+              padding-left: 10px;
+              width: 220px;
+            }
+          }
+          .form-actions {
+            margin-top: 65px;
+            input[type="submit"] {
+              border-radius: 0;
+              background-color: #e62e4c;
+              border: none;
+              color: #fff;
+              display: inline-block;
+              float: left;
+              font-size: 18px;
+              height: 60px;
+              line-height: 60px;
+              padding: 0 0 0 25px;
+              text-align: left;
+              width: 245px;
+            }
+            .submit-arrow {
+              display: inline-block;
+              height: 60px;
+              @include background(image-url("red_btn_after_60.png"));
+              background-repeat: no-repeat;
+              background-position: 0 0;
+              position: relative;
+              width: 33px;
+              &:after {
+                @include background(image-url("red_btn_icon.png"));
+                background-repeat: no-repeat;
+                background-position: center;
+                content: '';
+                height: 60px;
+                position: absolute;
+                left: -8px;
+                width: 16px;
+                z-index: 3;
+                border-left-color: #fff;
+              }
+            }
+            &:hover {
+              input[type=submit] {
+                background-color: #ff4060;
+              }
+              .submit-arrow {
+                background-position: 0 -60px;
+              }
+            }
+          }
+          @media screen and (max-width: $breakpoints960 - 1) {
+            float: left;
+            margin-top: 10px;
+            .form-actions {
+              margin-top: 40px;
+            }
+          }
+          @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+            width: 260px;
+            .form-item {
+              input[type=text] {
+                width: 200px;
+              }
+            }
+            .form-actions {
+              margin-bottom: 15px;
+              input[type=submit] {
+                width: 225px;
+              }
+            }
+          }
+          @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+            .form-actions {
+              margin-bottom: 15px;
+            }
+          }
+          @media screen and (max-width: $breakpoints640 - 1) {
+            width: 240px;
+            .form-item {
+              input[type=text] {
+                width: 180px;
+              }
+            }
+            .form-actions {
+              margin-bottom: 15px;
+              input[type=submit] {
+                width: 205px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
