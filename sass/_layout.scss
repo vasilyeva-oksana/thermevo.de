@@ -3361,3 +3361,51 @@ START basket
     }
   }
 }
+
+#iqub-container.error {
+  font-size: 20px;
+  a {
+    color: #015995;
+    &:hover {
+      color: #e62e4c;
+    }
+  }
+  @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: $breakpoints640 - 1) {
+    font-size: 14px;
+  }
+  .img_block {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+      padding-top: 70px;
+    }
+    @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+    @media screen and (max-width: $breakpoints640 - 1) {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    img {
+      height: auto;
+      @media screen and (max-width: $breakpoints1280 - 1) and (min-width: $breakpoints960) {
+        width: 350px;
+      }
+      @media screen and (max-width: $breakpoints960 - 1) and (min-width: $breakpoints640) {
+        width: 350px;
+      }
+      @media screen and (max-width: $breakpoints640 - 1) {
+        width: 260px;
+      }
+    }
+  }
+  .big {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  padding-bottom: 25px;
+}
