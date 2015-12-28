@@ -10,17 +10,18 @@
     <table>
       <tr>
         <td class="text_centr">
-          <span class="h1">Dear < name surname ></span>
+          <span class="h1">Dear < user name surname >.</span>
         </td>
       </tr>
       <tr>
         <td>
-          <p>We are sorry to inform you that the company < COMPANY NAME > you tried to register on Thermevo.de has been declined by our moderation team. </p>
-            <p>If you are sure that the data you provided for registration was correct please email us at <a href="mailto:Account.support@thermevo.de">Account.support@thermevo.de</a></p>
-            <p>If you have any questions or concerns please <a target="_blank" href="http://thermevo.de/page/contact_call">contact us</a>.</p>
-            <p>Thank you very much for your time and effort. </p>
+          <p>Thank you for your payment.  Advance payment for the Order < NoXXXXXX > Invoice < NoXXXXXX > had been recieved by Thermevo.de on DATE MONTH YEAR.</p>
+            <p>We sent out the Order to production and expect it to be ready for delivery on DATE MONTH YEAR.</p>
+            <p>As always, we would inform you by email on the progress of the Order.</p>
+            <p>If you have any questions or concerns please contact us by mail <a href="Order.support@thermevo.de">Order.support@thermevo.de</a> or call on us,
+                so that we will be able to assist you immediately.</p>
             <p class="signature">Yours Sincerely,<br>
-                THERMEVO Team</p>
+                < Name Surname ></p>
         </td>
       </tr>
     </table>
@@ -140,6 +141,17 @@
     .letter .text_centr {
         text-align: center;
     }
+  .letter ul {
+      padding-left: 0px;
+  }
+  .letter ul li {
+      list-style: none;
+      background-image: url('../images/bullet-red-line.jpg');
+      background-repeat: no-repeat;
+      background-position: 0px 22px;
+      padding: 13px 0px;
+      padding-left: 40px;
+  }
 </style>
 </body>
 </html>

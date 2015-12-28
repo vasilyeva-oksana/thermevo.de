@@ -10,17 +10,27 @@
     <table>
       <tr>
         <td class="text_centr">
-          <span class="h1">Dear < name surname ></span>
+          <span class="h1">Dear < user name surname >.</span>
         </td>
       </tr>
       <tr>
         <td>
-          <p>We are sorry to inform you that the company < COMPANY NAME > you tried to register on Thermevo.de has been declined by our moderation team. </p>
-            <p>If you are sure that the data you provided for registration was correct please email us at <a href="mailto:Account.support@thermevo.de">Account.support@thermevo.de</a></p>
-            <p>If you have any questions or concerns please <a target="_blank" href="http://thermevo.de/page/contact_call">contact us</a>.</p>
-            <p>Thank you very much for your time and effort. </p>
-            <p class="signature">Yours Sincerely,<br>
-                THERMEVO Team</p>
+          <p>We regret to inform you that due to considerable overdue of your payment, we are forced to withdraw the Order we are previously agreed.</p>
+            <p>(ORDER INFO including)</p>
+            <p>The name of the customer</p>
+            <ul>
+                <li>The date the order was placed</li>
+                <li>The order number of the items being cancelled</li>
+                <li>A list of name of items being cancelled</li>
+                <li>The list should include parameters of the items being cancelled</li>
+                <li>The time of the cancellation</li>
+            </ul>
+            <p>(OPTIONAL Your previous payment will be automatically returned to your account within 7 business days).
+                To gather more information in this regard you may contact us by mail <a href="mailto:Order.support@thermevo.de">Order.support@thermevo.de</a> or call on us,
+                so that we will be able to assist you immediately.</p>
+            <p>We regret of inconvenience caused. If we can be of any further assistance, please let us know.</p>
+            <p class="signature">Yours truly,<br>
+                < Name Surname ></p>
         </td>
       </tr>
     </table>
@@ -140,6 +150,17 @@
     .letter .text_centr {
         text-align: center;
     }
+  .letter ul {
+      padding-left: 0px;
+  }
+  .letter ul li {
+      list-style: none;
+      background-image: url('../images/bullet-red-line.jpg');
+      background-repeat: no-repeat;
+      background-position: 0px 22px;
+      padding: 13px 0px;
+      padding-left: 40px;
+  }
 </style>
 </body>
 </html>
